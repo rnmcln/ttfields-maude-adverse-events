@@ -1,13 +1,13 @@
 # Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database
 
-Code, classification codebook and annotations for an analysis of all adverse event reports for Tumor Treating Fields (TTFields; Optune, Optune Gio, Optune Lua, NovoTTF-100A) in the US Food and Drug Administration Manufacturer and User Facility Device Experience (MAUDE) database, received between 21 February 2012 and 30 September 2025, together with a comparison of human, rule-based and large language model classification of the report narratives.
+Code, classification definitions and annotations for an analysis of all adverse event reports for Tumor Treating Fields (TTFields; Optune, Optune Gio, Optune Lua, NovoTTF-100A) in the US Food and Drug Administration Manufacturer and User Facility Device Experience (MAUDE) database, received between 21 February 2012 and 30 September 2025, together with a comparison of human, rule-based and large language model classification of the report narratives.
 
 Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena, Germany.
 Authors: Sophie Nickel, Mareike Kienow, Christian Senft, Falko Schwarz, Aaron Lawson McLean.
 
 ## Summary
 
-All 548 TTFields reports retrieved from openFDA on 17 October 2025 were classified on a five-dimension codebook (primary event category, severity, causality, device component, secondary event) by a trained rater; a second rater independently classified a random sample of 80 reports. A rule-based classifier and two locally run open-weight language models (Qwen 2.5 7B and Llama 3.1 8B, via Ollama) classified the same reports using the same codebook.
+All 548 TTFields reports retrieved from openFDA on 17 October 2025 were classified for primary event category, severity, causality, device component and secondary event by a trained rater; a second rater independently classified a random sample of 80 reports. A rule-based classifier and two locally run open-weight language models (Qwen 2.5 7B and Llama 3.1 8B, via Ollama) classified the same reports using the same codebook.
 
 - Infection (34.1%) and non-infectious skin reactions (27.4%) accounted for 61.5% of reports, followed by falls or entanglement (13.3%) and neurological events (11.5%). No report was classified as a primary hardware malfunction.
 - Of wound and infection reports, 53.4% involved a prior surgical site and 24.9% described surgical wound revision.

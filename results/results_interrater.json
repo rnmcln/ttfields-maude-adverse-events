@@ -74,8 +74,6 @@
  },
  "causality_unassessable_vs_possible": 12,
  "causality_possible_vs_unlikely": 9,
- "queried_in_sample": 1,
- "primary_kappa_excl_queried": 0.574,
  "regex_kappa_vs_sn_sample": {
   "est": 0.578,
   "lo": 0.45,

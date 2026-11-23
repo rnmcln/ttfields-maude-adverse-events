@@ -50,10 +50,6 @@ R["infection_skin_swaps"] = {"sn_inf_alm_skin": int(((d.human_primary.values == 
 R["causality_unassessable_vs_possible"] = int(((d.human_causality.values == "UNASSESSABLE") & (x.alm_causality.values == "POSSIBLE")).sum())
 R["causality_possible_vs_unlikely"] = int(((d.human_causality.values == "POSSIBLE") & (x.alm_causality.values == "UNLIKELY")).sum())
 # reports whose coding queries were discussed with the supervising investigator (first rater's notes)
-QUERIED = [41, 45, 50, 62, 66, 67, 76, 78, 80, 83, 98]
-keep = ~np.isin(x.row_id.values, QUERIED)
-R["queried_in_sample"] = int((~keep).sum())
-R["primary_kappa_excl_queried"] = round(float(cohen_kappa_score(d.human_primary.values[keep], x.alm_primary_category.values[keep], labels=CATS)), 3)
 for arm in ["regex","qwen","llama"]:
     col = f"{arm}_primary"
     if col in d and d[col].notna().all():
