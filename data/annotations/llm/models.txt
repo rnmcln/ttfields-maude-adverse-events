@@ -1,0 +1,5 @@
+Ollama models (name, ID, size):
+qwen2.5:7b                  845dbda0ea48    4.7 GB
+llama3.1:8b                 46e0c10c039e    4.9 GB
+ollama version is 0.24.0
+Quantisation: Q4_K_M (both models)

@@ -1,0 +1,9 @@
+descriptor,SKIN_NONINF,INFECTION,all
+surgical_site,63/150,117/187,180/337
+implant_exposure,24/150,26/187,50/337
+surgical_revision,19/150,65/187,84/337
+organism_or_culture,1/150,28/187,29/337
+iv_antibiotics,1/150,39/187,40/337
+bevacizumab,27/150,53/187,80/337
+shunt,6/150,4/187,10/337
+hospitalised,29/150,92/187,121/337

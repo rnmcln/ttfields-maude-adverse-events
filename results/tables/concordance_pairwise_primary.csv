@@ -1,0 +1,7 @@
+pair,agreement_%,kappa
+Human vs Rule-based,68.4 (64.4 to 72.3),0.59 (0.54 to 0.63)
+Human vs Qwen 2.5 7B,71.9 (68.1 to 75.7),0.63 (0.59 to 0.68)
+Human vs Llama 3.1 8B,67.0 (63.0 to 70.8),0.57 (0.52 to 0.62)
+Rule-based vs Qwen 2.5 7B,62.2 (58.0 to 66.2),0.52 (0.47 to 0.56)
+Rule-based vs Llama 3.1 8B,60.0 (56.0 to 64.2),0.50 (0.45 to 0.55)
+Qwen 2.5 7B vs Llama 3.1 8B,78.5 (75.0 to 81.8),0.71 (0.66 to 0.75)

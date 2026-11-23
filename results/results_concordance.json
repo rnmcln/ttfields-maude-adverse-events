@@ -1,0 +1,659 @@
+{
+ "arms": [
+  "human",
+  "regex",
+  "qwen",
+  "llama"
+ ],
+ "N": 548,
+ "B": 2000,
+ "seed": 20251017,
+ "qwen_n_available": 548,
+ "qwen_parse_failures": 0,
+ "qwen_n_retried": 0,
+ "qwen_median_seconds": 18.229999999999997,
+ "llama_n_available": 548,
+ "llama_parse_failures": 0,
+ "llama_n_retried": 0,
+ "llama_median_seconds": 15.41,
+ "pairwise_primary": [
+  {
+   "pair": "Human vs Rule-based",
+   "a": "human",
+   "b": "regex",
+   "agreement": {
+    "est": 0.684,
+    "lo": 0.644,
+    "hi": 0.723
+   },
+   "kappa": {
+    "est": 0.589,
+    "lo": 0.54,
+    "hi": 0.633
+   }
+  },
+  {
+   "pair": "Human vs Qwen 2.5 7B",
+   "a": "human",
+   "b": "qwen",
+   "agreement": {
+    "est": 0.719,
+    "lo": 0.681,
+    "hi": 0.757
+   },
+   "kappa": {
+    "est": 0.634,
+    "lo": 0.586,
+    "hi": 0.684
+   }
+  },
+  {
+   "pair": "Human vs Llama 3.1 8B",
+   "a": "human",
+   "b": "llama",
+   "agreement": {
+    "est": 0.67,
+    "lo": 0.63,
+    "hi": 0.708
+   },
+   "kappa": {
+    "est": 0.572,
+    "lo": 0.522,
+    "hi": 0.621
+   }
+  },
+  {
+   "pair": "Rule-based vs Qwen 2.5 7B",
+   "a": "regex",
+   "b": "qwen",
+   "agreement": {
+    "est": 0.622,
+    "lo": 0.58,
+    "hi": 0.662
+   },
+   "kappa": {
+    "est": 0.517,
+    "lo": 0.469,
+    "hi": 0.564
+   }
+  },
+  {
+   "pair": "Rule-based vs Llama 3.1 8B",
+   "a": "regex",
+   "b": "llama",
+   "agreement": {
+    "est": 0.6,
+    "lo": 0.56,
+    "hi": 0.642
+   },
+   "kappa": {
+    "est": 0.498,
+    "lo": 0.452,
+    "hi": 0.546
+   }
+  },
+  {
+   "pair": "Qwen 2.5 7B vs Llama 3.1 8B",
+   "a": "qwen",
+   "b": "llama",
+   "agreement": {
+    "est": 0.785,
+    "lo": 0.75,
+    "hi": 0.818
+   },
+   "kappa": {
+    "est": 0.708,
+    "lo": 0.661,
+    "hi": 0.752
+   }
+  }
+ ],
+ "fleiss_kappa_all": 0.581,
+ "krippendorff_alpha_all": 0.581,
+ "vs_human": {
+  "regex": {
+   "accuracy": {
+    "est": 0.684,
+    "lo": 0.644,
+    "hi": 0.723
+   },
+   "kappa": {
+    "est": 0.589,
+    "lo": 0.54,
+    "hi": 0.633
+   },
+   "macro_f1": {
+    "est": 0.408,
+    "lo": 0.366,
+    "hi": 0.446
+   },
+   "weighted_f1": {
+    "est": 0.673,
+    "lo": 0.629,
+    "hi": 0.714
+   },
+   "macro_mcc": 0.381
+  },
+  "qwen": {
+   "accuracy": {
+    "est": 0.719,
+    "lo": 0.681,
+    "hi": 0.757
+   },
+   "kappa": {
+    "est": 0.634,
+    "lo": 0.586,
+    "hi": 0.684
+   },
+   "macro_f1": {
+    "est": 0.492,
+    "lo": 0.445,
+    "hi": 0.535
+   },
+   "weighted_f1": {
+    "est": 0.715,
+    "lo": 0.676,
+    "hi": 0.755
+   },
+   "macro_mcc": 0.462
+  },
+  "llama": {
+   "accuracy": {
+    "est": 0.67,
+    "lo": 0.63,
+    "hi": 0.708
+   },
+   "kappa": {
+    "est": 0.572,
+    "lo": 0.522,
+    "hi": 0.621
+   },
+   "macro_f1": {
+    "est": 0.456,
+    "lo": 0.39,
+    "hi": 0.517
+   },
+   "weighted_f1": {
+    "est": 0.648,
+    "lo": 0.603,
+    "hi": 0.691
+   },
+   "macro_mcc": 0.44
+  }
+ },
+ "per_category": [
+  {
+   "arm": "Rule-based",
+   "category": "SKIN_NONINF",
+   "support_human": 150,
+   "n_predicted": 95,
+   "precision": 0.884,
+   "recall": 0.56,
+   "f1": 0.686,
+   "mcc": 0.627
+  },
+  {
+   "arm": "Rule-based",
+   "category": "INFECTION",
+   "support_human": 187,
+   "n_predicted": 240,
+   "precision": 0.729,
+   "recall": 0.936,
+   "f1": 0.82,
+   "mcc": 0.722
+  },
+  {
+   "arm": "Rule-based",
+   "category": "HARDWARE",
+   "support_human": 0,
+   "n_predicted": 7,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Rule-based",
+   "category": "FALL_ENTANGLE",
+   "support_human": 73,
+   "n_predicted": 91,
+   "precision": 0.703,
+   "recall": 0.877,
+   "f1": 0.78,
+   "mcc": 0.749
+  },
+  {
+   "arm": "Rule-based",
+   "category": "NEURO",
+   "support_human": 63,
+   "n_predicted": 54,
+   "precision": 0.796,
+   "recall": 0.683,
+   "f1": 0.735,
+   "mcc": 0.706
+  },
+  {
+   "arm": "Rule-based",
+   "category": "SYSTEMIC",
+   "support_human": 13,
+   "n_predicted": 12,
+   "precision": 0.5,
+   "recall": 0.462,
+   "f1": 0.48,
+   "mcc": 0.468
+  },
+  {
+   "arm": "Rule-based",
+   "category": "USER_ERROR",
+   "support_human": 4,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Rule-based",
+   "category": "DISEASE_PROG",
+   "support_human": 23,
+   "n_predicted": 7,
+   "precision": 0.286,
+   "recall": 0.087,
+   "f1": 0.133,
+   "mcc": 0.138
+  },
+  {
+   "arm": "Rule-based",
+   "category": "OTHER",
+   "support_human": 27,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Rule-based",
+   "category": "UNCLASSIFIABLE",
+   "support_human": 8,
+   "n_predicted": 42,
+   "precision": 0.024,
+   "recall": 0.125,
+   "f1": 0.04,
+   "mcc": 0.022
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "SKIN_NONINF",
+   "support_human": 150,
+   "n_predicted": 211,
+   "precision": 0.626,
+   "recall": 0.88,
+   "f1": 0.731,
+   "mcc": 0.624
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "INFECTION",
+   "support_human": 187,
+   "n_predicted": 147,
+   "precision": 0.884,
+   "recall": 0.695,
+   "f1": 0.778,
+   "mcc": 0.694
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "HARDWARE",
+   "support_human": 0,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": null
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "FALL_ENTANGLE",
+   "support_human": 73,
+   "n_predicted": 74,
+   "precision": 0.797,
+   "recall": 0.808,
+   "f1": 0.803,
+   "mcc": 0.772
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "NEURO",
+   "support_human": 63,
+   "n_predicted": 57,
+   "precision": 0.807,
+   "recall": 0.73,
+   "f1": 0.767,
+   "mcc": 0.739
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "SYSTEMIC",
+   "support_human": 13,
+   "n_predicted": 6,
+   "precision": 0.667,
+   "recall": 0.308,
+   "f1": 0.421,
+   "mcc": 0.445
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "USER_ERROR",
+   "support_human": 4,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "DISEASE_PROG",
+   "support_human": 23,
+   "n_predicted": 32,
+   "precision": 0.156,
+   "recall": 0.217,
+   "f1": 0.182,
+   "mcc": 0.142
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "OTHER",
+   "support_human": 27,
+   "n_predicted": 21,
+   "precision": 0.857,
+   "recall": 0.667,
+   "f1": 0.75,
+   "mcc": 0.745
+  },
+  {
+   "arm": "Qwen 2.5 7B",
+   "category": "UNCLASSIFIABLE",
+   "support_human": 8,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "SKIN_NONINF",
+   "support_human": 150,
+   "n_predicted": 249,
+   "precision": 0.578,
+   "recall": 0.96,
+   "f1": 0.722,
+   "mcc": 0.623
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "INFECTION",
+   "support_human": 187,
+   "n_predicted": 106,
+   "precision": 0.906,
+   "recall": 0.513,
+   "f1": 0.655,
+   "mcc": 0.583
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "HARDWARE",
+   "support_human": 0,
+   "n_predicted": 3,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "FALL_ENTANGLE",
+   "support_human": 73,
+   "n_predicted": 88,
+   "precision": 0.727,
+   "recall": 0.877,
+   "f1": 0.795,
+   "mcc": 0.765
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "NEURO",
+   "support_human": 63,
+   "n_predicted": 69,
+   "precision": 0.71,
+   "recall": 0.778,
+   "f1": 0.742,
+   "mcc": 0.708
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "SYSTEMIC",
+   "support_human": 13,
+   "n_predicted": 7,
+   "precision": 0.714,
+   "recall": 0.385,
+   "f1": 0.5,
+   "mcc": 0.516
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "USER_ERROR",
+   "support_human": 4,
+   "n_predicted": 5,
+   "precision": 0.2,
+   "recall": 0.25,
+   "f1": 0.222,
+   "mcc": 0.217
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "DISEASE_PROG",
+   "support_human": 23,
+   "n_predicted": 16,
+   "precision": 0.188,
+   "recall": 0.13,
+   "f1": 0.154,
+   "mcc": 0.126
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "OTHER",
+   "support_human": 27,
+   "n_predicted": 5,
+   "precision": 1.0,
+   "recall": 0.185,
+   "f1": 0.312,
+   "mcc": 0.422
+  },
+  {
+   "arm": "Llama 3.1 8B",
+   "category": "UNCLASSIFIABLE",
+   "support_human": 8,
+   "n_predicted": 0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "mcc": 0.0
+  }
+ ],
+ "calibration_excluded": {
+  "n": 528,
+  "regex": {
+   "accuracy": 0.682,
+   "kappa": 0.581
+  },
+  "qwen": {
+   "accuracy": 0.722,
+   "kappa": 0.633
+  },
+  "llama": {
+   "accuracy": 0.67,
+   "kappa": 0.567
+  }
+ },
+ "secondary_dimensions": {
+  "regex": {
+   "severity_n_valid": 548,
+   "severity_linear_weighted_kappa": {
+    "est": 0.409,
+    "lo": 0.357,
+    "hi": 0.462
+   },
+   "severity_exact_agreement": {
+    "est": 0.578,
+    "lo": 0.536,
+    "hi": 0.62
+   },
+   "causality_kappa": {
+    "est": 0.031,
+    "lo": -0.012,
+    "hi": 0.076
+   },
+   "fatal_sensitivity": {
+    "k": 23,
+    "n": 23
+   },
+   "fatal_ppv": {
+    "k": 23,
+    "n": 24
+   },
+   "fatal_missed": {
+    "n": 0,
+    "event_type_injury": 0
+   },
+   "array_component_kappa": {
+    "est": 0.206,
+    "lo": 0.156,
+    "hi": 0.255
+   }
+  },
+  "qwen": {
+   "severity_n_valid": 548,
+   "severity_linear_weighted_kappa": {
+    "est": 0.357,
+    "lo": 0.305,
+    "hi": 0.413
+   },
+   "severity_exact_agreement": {
+    "est": 0.575,
+    "lo": 0.535,
+    "hi": 0.617
+   },
+   "causality_kappa": {
+    "est": 0.135,
+    "lo": 0.097,
+    "hi": 0.173
+   },
+   "fatal_sensitivity": {
+    "k": 13,
+    "n": 23
+   },
+   "fatal_ppv": {
+    "k": 13,
+    "n": 14
+   },
+   "fatal_missed": {
+    "n": 10,
+    "event_type_injury": 10
+   },
+   "array_component_kappa": {
+    "est": 0.207,
+    "lo": 0.166,
+    "hi": 0.251
+   }
+  },
+  "llama": {
+   "severity_n_valid": 548,
+   "severity_linear_weighted_kappa": {
+    "est": 0.4,
+    "lo": 0.343,
+    "hi": 0.457
+   },
+   "severity_exact_agreement": {
+    "est": 0.641,
+    "lo": 0.602,
+    "hi": 0.677
+   },
+   "causality_kappa": {
+    "est": 0.225,
+    "lo": 0.181,
+    "hi": 0.266
+   },
+   "fatal_sensitivity": {
+    "k": 5,
+    "n": 23
+   },
+   "fatal_ppv": {
+    "k": 5,
+    "n": 5
+   },
+   "fatal_missed": {
+    "n": 18,
+    "event_type_injury": 17
+   },
+   "array_component_kappa": {
+    "est": 0.093,
+    "lo": 0.065,
+    "hi": 0.122
+   }
+  }
+ },
+ "event_type_death_vs_human_fatal": {
+  "k": 5,
+  "n_human_fatal": 23,
+  "n_event_type_death": 5
+ },
+ "regex_infection_overcall": {
+  "n_fp": 65,
+  "n_regex_infection": 240,
+  "fp_human_category": {
+   "SKIN_NONINF": 48,
+   "DISEASE_PROG": 6,
+   "SYSTEMIC": 4,
+   "NEURO": 3,
+   "UNCLASSIFIABLE": 3,
+   "FALL_ENTANGLE": 1
+  },
+  "fp_no_infection_term_after_removing_commentary": 23
+ },
+ "regex_unclassifiable": {
+  "n": 42,
+  "human_category": {
+   "OTHER": 22,
+   "SKIN_NONINF": 7,
+   "FALL_ENTANGLE": 6,
+   "NEURO": 3,
+   "INFECTION": 2,
+   "SYSTEMIC": 1,
+   "UNCLASSIFIABLE": 1
+  }
+ },
+ "regex_hardware": {
+  "n": 7,
+  "human_category": {
+   "SKIN_NONINF": 5,
+   "OTHER": 1,
+   "USER_ERROR": 1
+  }
+ },
+ "regex_event_text_only_posthoc": {
+  "accuracy": {
+   "est": 0.673,
+   "lo": 0.631,
+   "hi": 0.712
+  },
+  "kappa": {
+   "est": 0.583,
+   "lo": 0.535,
+   "hi": 0.627
+  },
+  "n_infection": 207
+ }
+}

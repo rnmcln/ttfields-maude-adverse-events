@@ -1,0 +1,38 @@
+{
+ "title": "Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database: code, codebook and annotations",
+ "upload_type": "software",
+ "license": "MIT",
+ "description": "Code, classification codebook and annotations for an analysis of 548 adverse event reports for Tumor Treating Fields devices in the US FDA MAUDE database (2012 to 2025), including human, rule-based and large language model classifications of the report narratives. MAUDE narratives are not redistributed; they are retrieved from openFDA by the included scripts.",
+ "creators": [
+  {
+   "name": "Nickel, Sophie",
+   "affiliation": "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  },
+  {
+   "name": "Kienow, Mareike",
+   "affiliation": "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  },
+  {
+   "name": "Senft, Christian",
+   "affiliation": "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  },
+  {
+   "name": "Schwarz, Falko",
+   "affiliation": "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  },
+  {
+   "name": "Lawson McLean, Aaron",
+   "affiliation": "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena",
+   "orcid": "0000-0001-5528-6905"
+  }
+ ],
+ "keywords": [
+  "Tumor Treating Fields",
+  "MAUDE",
+  "medical device safety",
+  "adverse events",
+  "glioblastoma",
+  "text classification"
+ ],
+ "version": "1.0.0"
+}

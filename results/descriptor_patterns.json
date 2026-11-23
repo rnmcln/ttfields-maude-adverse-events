@@ -1,0 +1,72 @@
+{
+ "surgical_site": {
+  "pattern": "CRANIOTOMY|RESECTION (SITE|SCAR|CAVITY|INCISION|AREA)|SURGICAL (SITE|INCISION|WOUND|SCAR)|INCISION(?! AND DRAINAGE)|\\bSCAR\\b|BONE FLAP|SUTURE LINE|STAPLE LINE",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "implant_exposure": {
+  "pattern": "EXPOS\\w*.{0,60}(HARDWARE|PLATE|SCREW|MESH|SHUNT|BONE|CATHETER|TUBING|CRANIUM|SKULL|DURA)|(HARDWARE|PLATE|SCREW|MESH|SHUNT|TUBING|BONE|SKULL)S? (WAS |WERE |IS |ARE )?(VISIBLY )?EXPOSED",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "surgical_revision": {
+  "pattern": "UNDERWENT[^.]{0,160}(DEBRID|WASH ?OUT|REVISION|REMOV|CRANIECTOMY|CRANIOPLASTY|GRAFT|\\bFLAP\\b|EXCISION|DRAINAGE|CLOSURE|EXPLANT|EXPLOR)|BONE FLAP (WAS |WERE )?(REMOV|EXCIS|EXPLANT)|REMOVAL OF (THE )?(INFECTED )?BONE FLAP|(DEBRIDEMENT|WASHOUT|WOUND REVISION|REVISION SURGERY) (WAS )?PERFORMED",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "organism_or_culture": {
+  "pattern": "STAPH|STREPT|PROPIONI|CUTIBACT|MRSA|PSEUDOMON|ENTEROCOC|E\\.? ?COLI|SERRATIA|KLEBSIEL|CULTURES? (WAS |WERE |CAME BACK )?POSITIVE|POSITIVE CULTURE|CULTURES? (DID )?GR[EO]W",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "iv_antibiotics": {
+  "pattern": "\\bIV ANTIBIOTIC|INTRAVENOUS (ANTIBIOTIC|VANCOMYCIN|CEF)|VANCOMYCIN|CEFAZOLIN|CEFTRIAXONE|MEROPENEM|CEFEPIME|PIPERACILLIN|NAFCILLIN|DAPTOMYCIN|\\bPICC\\b",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "hospitalised": {
+  "pattern": "HOSPITALI[SZ]|\\bADMITTED\\b|ADMISSION",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "temporary_interruption": {
+  "pattern": "TEMPORARILY (DISCONTINU|INTERRUPT|STOPP|PAUS|SUSPEND|HELD|HALT)|THERAPY BREAK|TREATMENT BREAK|\\bPAUSED\\b|PLANN?ED TO RESUME|RESUMED (OPTUNE|THERAPY|TREATMENT|DEVICE)",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "permanent_discontinuation": {
+  "pattern": "PERMANENTLY (DISCONTINU|STOPP)|DISCONTINUED [A-Z ]{0,30}PERMANENTLY|WILL NOT RESUME|DID NOT RESUME|DECIDED TO (STOP|DISCONTINUE|END)",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "fracture": {
+  "pattern": "FRACTUR",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "intracranial_bleed": {
+  "pattern": "SUBDURAL|EPIDURAL H|SUBARACHNOID|INTRACRANIAL (HEMORRHAGE|HAEMORRHAGE|BLEED)|INTRAPARENCHYMAL|INTRACEREBRAL|BRAIN (BLEED|HEMORRHAGE)|(INTRACRANIAL|CEREBRAL|SUBDURAL|EPIDURAL) (HEMATOMA|HAEMATOMA)",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "head_wound_after_fall": {
+  "pattern": "LACERATION|SUTURE[DS]|STAPLED|STAPLES|HEAD (INJURY|TRAUMA|WOUND)|CONTUSION",
+  "negation_window": true,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "cable_or_bag_mechanism": {
+  "pattern": "TRIPP?\\w* (OVER|ON)|\\bCORD\\b|CABLE|WIRE|\\bBAG\\b|BACKPACK|STRAP|ENTANGL|CAUGHT|PULLED (HIM|HER|THE PATIENT|THE SUBJECT)",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ },
+ "bevacizumab": {
+  "pattern": "BEVACIZUMAB|AVASTIN",
+  "negation_window": false,
+  "source": "full narrative"
+ },
+ "shunt": {
+  "pattern": "SHUNT",
+  "negation_window": false,
+  "source": "event narrative (manufacturer commentary removed)"
+ }
+}

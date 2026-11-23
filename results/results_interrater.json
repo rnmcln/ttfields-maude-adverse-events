@@ -1,0 +1,109 @@
+{
+ "n": 80,
+ "seed_sample": 20251123,
+ "primary_agreement": {
+  "est": 0.662,
+  "lo": 0.562,
+  "hi": 0.762
+ },
+ "primary_kappa": {
+  "est": 0.566,
+  "lo": 0.439,
+  "hi": 0.684
+ },
+ "severity_weighted_kappa": {
+  "est": 0.811,
+  "lo": 0.664,
+  "hi": 0.928
+ },
+ "causality_kappa": {
+  "est": 0.358,
+  "lo": 0.227,
+  "hi": 0.492
+ },
+ "array_component_kappa": {
+  "est": 0.179,
+  "lo": 0.053,
+  "hi": 0.326
+ },
+ "severity_exact_agreement": {
+  "est": 0.9,
+  "lo": 0.838,
+  "hi": 0.963
+ },
+ "causality_agreement": {
+  "est": 0.5,
+  "lo": 0.388,
+  "hi": 0.613
+ },
+ "grouped_kappa": {
+  "est": 0.621,
+  "lo": 0.476,
+  "hi": 0.75
+ },
+ "grouped_agreement": {
+  "est": 0.787,
+  "lo": 0.7,
+  "hi": 0.875
+ },
+ "wound_group": {
+  "sn_n": 50,
+  "alm_n": 50,
+  "both": 48,
+  "kappa": {
+   "est": 0.893,
+   "lo": 0.772,
+   "hi": 0.974
+  }
+ },
+ "falls": {
+  "sn_n": 10,
+  "alm_n": 5,
+  "both": 5,
+  "sn_fall_alm_other_or_dp": 5
+ },
+ "neuro": {
+  "sn_n": 9,
+  "alm_n": 5,
+  "both": 3,
+  "sn_neuro_alm_dp": 4
+ },
+ "infection_skin_swaps": {
+  "sn_inf_alm_skin": 6,
+  "sn_skin_alm_inf": 2
+ },
+ "causality_unassessable_vs_possible": 12,
+ "causality_possible_vs_unlikely": 9,
+ "queried_in_sample": 1,
+ "primary_kappa_excl_queried": 0.574,
+ "regex_kappa_vs_sn_sample": {
+  "est": 0.578,
+  "lo": 0.45,
+  "hi": 0.696
+ },
+ "qwen_kappa_vs_sn_sample": {
+  "est": 0.621,
+  "lo": 0.492,
+  "hi": 0.741
+ },
+ "llama_kappa_vs_sn_sample": {
+  "est": 0.58,
+  "lo": 0.445,
+  "hi": 0.702
+ },
+ "regex_kappa_vs_alm": {
+  "est": 0.437,
+  "lo": 0.32,
+  "hi": 0.558
+ },
+ "qwen_kappa_vs_alm": {
+  "est": 0.572,
+  "lo": 0.447,
+  "hi": 0.688
+ },
+ "llama_kappa_vs_alm": {
+  "est": 0.596,
+  "lo": 0.482,
+  "hi": 0.71
+ }
+}

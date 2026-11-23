@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these annotations, please cite them as below."
+title: "Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database: code, codebook and annotations"
+type: software
+version: 1.0.0
+date-released: 2026-11-23
+license: MIT
+authors:
+  - family-names: Nickel
+    given-names: Sophie
+    affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  - family-names: Kienow
+    given-names: Mareike
+    affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  - family-names: Senft
+    given-names: Christian
+    affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  - family-names: Schwarz
+    given-names: Falko
+    affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+  - family-names: Lawson McLean
+    given-names: Aaron
+    affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
+    orcid: "https://orcid.org/0000-0001-5528-6905"
+keywords: [Tumor Treating Fields, MAUDE, medical device safety, adverse events, glioblastoma, text classification]
