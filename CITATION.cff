@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this code or these annotations, please cite them as below."
-title: "Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database: code, codebook and annotations"
+title: "Wound, surgical-site and fall-related complications reported with Tumor Treating Fields in the FDA MAUDE database: code, definitions and annotations"
 type: software
 version: 1.0.0
-date-released: 2026-11-23
+date-released: 2026-11-24
 license: MIT
 authors:
   - family-names: Nickel
@@ -22,4 +22,4 @@ authors:
     given-names: Aaron
     affiliation: "Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena"
     orcid: "https://orcid.org/0000-0001-5528-6905"
-keywords: [Tumor Treating Fields, MAUDE, medical device safety, adverse events, glioblastoma, text classification]
+keywords: [Tumor Treating Fields, MAUDE, medical device safety, adverse events, glioblastoma, surgical wound complications, text classification]

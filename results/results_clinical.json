@@ -50,12 +50,12 @@
   }
  },
  "followup_any": {
-  "n": 149,
+  "n": 137,
   "N": 548,
-  "pct": 27.2,
+  "pct": 25.0,
   "ci95": [
-   23.6,
-   31.1
+   21.6,
+   28.8
   ]
  },
  "brand": {
@@ -180,12 +180,12 @@
   ]
  },
  "product_problem_no_device_problem": {
-  "n": 543,
+  "n": 541,
   "N": 548,
-  "pct": 99.1,
+  "pct": 98.7,
   "ci95": [
-   97.9,
-   99.6
+   97.4,
+   99.4
   ]
  },
  "years": {
@@ -217,7 +217,7 @@
  "text_length": {
   "median": 1571,
   "q1": 1183,
-  "q3": 2069,
+  "q3": 2068,
   "min": 376,
   "max": 9428
  },
@@ -1750,7 +1750,7 @@
  "falls_unrelated_statement": 34,
  "falls_unrelated_and_array_not_ruled_out": 27,
  "falls_array_disc": 6,
- "fatal_injury_with_followup": 7,
+ "fatal_injury_with_followup": 6,
  "wound_temp_interruption": {
   "n": 229,
   "N": 337,

@@ -9,7 +9,8 @@ recorded with parse_ok=false and coded UNCLASSIFIABLE downstream.
 import json, sys, time, urllib.request, pathlib, re, hashlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-DATA = HERE.parent / "data" / "derived" / "reports_for_llm.jsonl"
+import os
+DATA = pathlib.Path(os.environ.get("REPORTS_FILE", HERE.parent / "data" / "derived" / "reports_for_llm.jsonl"))
 PROMPT = (HERE.parent / "codebook" / "llm_prompt.txt").read_text()
 URL = "http://localhost:11434/api/chat"
 PRIMARY = {"SKIN_NONINF","INFECTION","HARDWARE","FALL_ENTANGLE","NEURO","SYSTEMIC",

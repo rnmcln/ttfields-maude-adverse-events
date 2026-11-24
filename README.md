@@ -1,59 +1,66 @@
-# Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database
+# Wound, surgical-site and fall-related complications reported with Tumor Treating Fields in the FDA MAUDE database
 
-Code, classification definitions and annotations for an analysis of all adverse event reports for Tumor Treating Fields (TTFields; Optune, Optune Gio, Optune Lua, NovoTTF-100A) in the US Food and Drug Administration Manufacturer and User Facility Device Experience (MAUDE) database, received between 21 February 2012 and 30 September 2025, together with a comparison of human, rule-based and large language model classification of the report narratives.
+Code, classification definitions, extraction rules and annotations for a narrative analysis of adverse event reports for Tumor Treating Fields (TTFields; Optune, Optune Gio, Optune Lua, NovoTTF-100A) in the US Food and Drug Administration Manufacturer and User Facility Device Experience (MAUDE) database, received between 21 February 2012 and 30 September 2025.
 
 Department of Neurosurgery, Jena University Hospital, Friedrich Schiller University Jena, Germany.
 Authors: Sophie Nickel, Mareike Kienow, Christian Senft, Falko Schwarz, Aaron Lawson McLean.
 
 ## Summary
 
-All 548 TTFields reports retrieved from openFDA on 17 October 2025 were classified for primary event category, severity, causality, device component and secondary event by a trained rater; a second rater independently classified a random sample of 80 reports. A rule-based classifier and two locally run open-weight language models (Qwen 2.5 7B and Llama 3.1 8B, via Ollama) classified the same reports using the same codebook.
+The study cohort comprises 548 reports retrieved from openFDA on 17 October 2025. Each report was classified by a trained rater (event category, severity, causality, device component, secondary event); a second rater recoded a random sample of 80. Clinical attributes (operative-site involvement, dehiscence, exposure of bone or implants, infection, operative procedures, fall mechanisms and injuries, death attribution) were extracted from the narratives with sentence-level rules and cross-checked with a locally run language model (Qwen 2.5 7B). A rule-based classifier and two language models (Qwen 2.5 7B, Llama 3.1 8B) classified the event category for a secondary comparison.
 
-- Infection (34.1%) and non-infectious skin reactions (27.4%) accounted for 61.5% of reports, followed by falls or entanglement (13.3%) and neurological events (11.5%). No report was classified as a primary hardware malfunction.
-- Of wound and infection reports, 53.4% involved a prior surgical site and 24.9% described surgical wound revision.
-- A death was described in 23 reports, of which 5 carried the MAUDE event type "death".
-- Agreement on the primary category: two human raters κ = 0.57; human reference against the rule-based classifier κ = 0.59, Qwen 2.5 7B κ = 0.63, Llama 3.1 8B κ = 0.57.
+- Retrieval audit: independent openFDA search arms and the FDA bulk MAUDE device files identified 590 eligible Novocure reports; the original query had retrieved 548. The 42 missed reports (2012 to 2015, filed under spelling variants of NovoTTF-100A) are described with automated methods only.
+- Of 326 wound and infection reports concerning devices for intracranial tumours, 53.7% involved a prior operative site, 16.0% described exposed bone or implants and 40.2% an operative procedure for the complication (rule-based estimates; two-method ranges in the results files).
+- Of 73 fall reports, 32.9% described a cable or device-carrying mechanism of the fall.
+- Death was mentioned in 23 narratives; 5 were filed as death reports and 19 attributed the death to another cause.
+- Report content changed from early 2024 (Optune Gio brand, higher volume, lower share of reports graded severe), so proportions are reported by period.
+- The language-model extraction agreed closely with the rules for the main wound attributes but was unreliable for fall mechanisms and causal statements.
 
-MAUDE contains no exposure denominator; all proportions describe the composition of reports, not event risk.
+MAUDE contains no exposure denominator; all proportions describe reports, not event risk.
 
 ## Repository structure
 
 ```
-codebook/            classification codebook (v1.0), LLM system prompt, pilot prompt (v1, not used in the analysis)
-data/annotations/    reports.csv               study report numbers with SHA-256 checksums of each narrative and its text segments
-                     rater1_full.csv           first human rater, all reports (reference standard)
-                     rater2_sample.csv         second human rater, random sample of 80 reports
+codebook/            classification definitions (v1.0), classification prompt, pilot prompt (v1, not used),
+                     cross-check extraction prompt (llm_extract_prompt.txt)
+data/annotations/    reports.csv                     study report numbers with SHA-256 checksums of each narrative and its segments
+                     rater1_full.csv                 first human rater, all reports (reference)
+                     rater2_sample.csv               second human rater, random sample of 80 reports
                      double_coding_sample_key.csv
-                     rule_based.csv            rule-based classifier output
-                     llm/                      LLM classifications (JSON lines: codes, settings, timings and SHA-256 checksums of
-                                               prompt, report text and raw response; free-text responses are omitted because
-                                               they can quote report narratives)
-data/raw/            openFDA download (created by 00_fetch_openfda.py; not distributed)
-data/derived/        files containing report narratives (created by the pipeline; not distributed)
-results/             results JSON files, tables (CSV) and figures (PDF, PNG)
+                     rule_based.csv                  rule-based classifier output
+                     llm/                            language-model classifications (codes, settings, timings, checksums;
+                                                     free-text responses omitted)
+                     attributes_rule_based_v2.csv    clinical attributes, sentence-level rules (study and missed reports)
+                     llm_extract/, llm_missed/       language-model extraction and classification of the missed reports
+                                                     (field values and checksums; raw responses omitted)
+                     attributes_combined.csv         rule-based and language-model attributes merged
+                     missed_reports_rule_based.csv   rule-based classification of the missed reports
+data/raw/            openFDA download (not distributed)
+data/derived/        files containing narratives or FDA record fields (created by the pipeline; not distributed)
+results/             results JSON files, tables (CSV), figures (PDF, PNG), audit metadata
 scripts/             analysis pipeline
 ```
 
 ## Reproducing the analysis
 
-Python 3.10 or later; install dependencies with `pip install -r requirements.txt`, then run `./run_all.sh`. An openFDA API key is optional (`export OPENFDA_API_KEY=...`).
+Python 3.10 or later; install dependencies with `pip install -r requirements.txt`, then run `./run_all.sh`. An openFDA API key is optional (`export OPENFDA_API_KEY=...`). The published results were produced with Python 3.13, pandas 3.0, SciPy 1.18, statsmodels 0.15 and scikit-learn 1.9.
 
-1. `00_fetch_openfda.py` downloads all reports matching the original query from openFDA.
-2. `00b_select_reports.py` applies the inclusion filter (manufacturer Novocure, brand name Optune or NovoTTF, or product code NZK) and rebuilds the 548 study narratives in the order of the original snapshot using the segment checksums in `data/annotations/reports.csv`.
-3. `rule_based_classifier.py` re-runs the rule-based arm and compares it with the archived output.
-4. `01_build_dataset.py` to `05_figures_concordance.py` and `10_interrater.py` produce the results, tables and figures; `09_double_coding_sample.py` re-draws the double-coding sample and checks it against the archived key.
+1. `00_fetch_openfda.py` and `00b_select_reports.py` download the reports and rebuild the 548 study narratives from the checksums in `data/annotations/reports.csv`.
+2. `rule_based_classifier.py`, `01_build_dataset.py` to `05_figures_concordance.py` and `10_interrater.py` reproduce the classification and agreement results.
+3. `11_cohort_audit.py` runs the openFDA search arms; `11b_bulk_maude_scan.sh` scans the FDA bulk device files (about 700 MB are downloaded and discarded); `12_missed_reports.py` retrieves the reports that the original query did not return.
+4. `13_descriptors_v2.py` extracts the clinical attributes with sentence-level rules; `14_extraction_compare.py` merges them with the language-model extraction; `15_clinical_v2.py`, `16_concordance_v2.py` and `17_figures_v2.py` produce the revised results, tables and figures.
 
-The language model arm can be re-run with `scripts/run_llm_arms.sh` on a machine running Ollama with `qwen2.5:7b` and `llama3.1:8b` (Q4_K_M); settings are temperature 0, seed 20251017, context 8,192 tokens, maximum 512 output tokens and JSON-constrained output. Re-runs are written to `data/derived/llm_rerun/`.
+The language-model steps can be re-run on a machine running Ollama with `qwen2.5:7b` and `llama3.1:8b` (Q4_K_M): `scripts/run_llm_arms.sh` (classification) and `scripts/run_llm_extract.sh` (cross-check extraction and missed reports); settings are temperature 0, seed 20251017, context 8,192 tokens, maximum 512 output tokens and JSON-constrained output. Re-runs are written to `data/derived/llm_rerun/`.
 
 ### Differences between a new download and the study snapshot
 
-MAUDE reports receive follow-up submissions after their initial publication. In a download made on 23 November 2026, 546 of the 548 study narratives could be rebuilt exactly from their text segments; two reports (3010457505-2025-00548 and 3010457505-2025-00584) contained segments edited after the snapshot, and their current text is used. Twelve further reports received by 17 October 2025 meet the inclusion criteria but were published in openFDA after the retrieval; they are not part of the study set. With that download, all classification and agreement results reproduced exactly; the count of reports with follow-up submissions, the product problem field and one text-length quartile differed because these structured fields had been updated.
+MAUDE reports receive follow-up submissions after their initial publication. In a download made on 23 November 2026, 546 of the 548 study narratives could be rebuilt exactly from their text segments; two reports (3010457505-2025-00548 and 3010457505-2025-00584) contained segments edited after the snapshot, and their current text is used. Twelve further reports received between 1 and 16 October 2025 meet the inclusion criteria but were published in openFDA after the retrieval; they lie outside the study window. Structured fields such as follow-up counts, reporter country and source type are taken from the current record.
 
 ## Data sources and licences
 
-- MAUDE data are retrieved from the openFDA device adverse event API; openFDA content is public domain (CC0 1.0). Report narratives are not redistributed here.
+- MAUDE data are retrieved from openFDA and the FDA bulk MAUDE files; openFDA content is public domain (CC0 1.0). Report narratives and FDA record fields are not redistributed here.
 - Code: MIT licence (`LICENSE`).
-- Codebook, annotations and results: Creative Commons Attribution 4.0 International (CC BY 4.0).
+- Definitions, annotations and results: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 ## Citation
 

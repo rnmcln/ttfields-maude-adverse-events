@@ -1,0 +1,4609 @@
+{
+ "audit": {
+  "retrieved_utc": "2026-11-23T21:04:27Z",
+  "n_by_arm_window_to_20251017": {
+   "product_code_NZK": 589,
+   "product_code_SDA": 8,
+   "product_code_QGZ": 5,
+   "approval_P100034": 578,
+   "approval_H180002": 5,
+   "approval_P230042": 8,
+   "brand_optune": 557,
+   "brand_novottf": 40,
+   "generic_tumor_treating_fields": 0,
+   "manufacturer_novocure": 601,
+   "narrative_keywords": 602
+  },
+  "novocure_reports_to_20250930": 590,
+  "in_study": 548,
+  "missed": 42,
+  "arm_recall_of_target": {
+   "product_code_NZK": {
+    "n": 579,
+    "N": 590,
+    "pct": 98.1,
+    "ci95": [
+     96.7,
+     99.0
+    ]
+   },
+   "product_code_SDA": {
+    "n": 7,
+    "N": 590,
+    "pct": 1.2,
+    "ci95": [
+     0.6,
+     2.4
+    ]
+   },
+   "product_code_QGZ": {
+    "n": 4,
+    "N": 590,
+    "pct": 0.7,
+    "ci95": [
+     0.3,
+     1.7
+    ]
+   },
+   "approval_P100034": {
+    "n": 569,
+    "N": 590,
+    "pct": 96.4,
+    "ci95": [
+     94.6,
+     97.7
+    ]
+   },
+   "approval_H180002": {
+    "n": 4,
+    "N": 590,
+    "pct": 0.7,
+    "ci95": [
+     0.3,
+     1.7
+    ]
+   },
+   "approval_P230042": {
+    "n": 7,
+    "N": 590,
+    "pct": 1.2,
+    "ci95": [
+     0.6,
+     2.4
+    ]
+   },
+   "brand_optune": {
+    "n": 545,
+    "N": 590,
+    "pct": 92.4,
+    "ci95": [
+     89.9,
+     94.3
+    ]
+   },
+   "brand_novottf": {
+    "n": 40,
+    "N": 590,
+    "pct": 6.8,
+    "ci95": [
+     5.0,
+     9.1
+    ]
+   },
+   "generic_tumor_treating_fields": {
+    "n": 0,
+    "N": 590,
+    "pct": 0.0,
+    "ci95": [
+     0.0,
+     0.6
+    ]
+   },
+   "manufacturer_novocure": {
+    "n": 589,
+    "N": 590,
+    "pct": 99.8,
+    "ci95": [
+     99.0,
+     100.0
+    ]
+   },
+   "narrative_keywords": {
+    "n": 588,
+    "N": 590,
+    "pct": 99.7,
+    "ci95": [
+     98.8,
+     99.9
+    ]
+   }
+  },
+  "study_reports_not_in_target": 0
+ },
+ "missed": {
+  "n": 42,
+  "years": {
+   "2012": 9,
+   "2013": 22,
+   "2014": 10,
+   "2015": 1
+  },
+  "event_type": {
+   "Death": 21,
+   "Other": 15,
+   "Injury": 6
+  },
+  "brand": {
+   "NOVOTTF-100A": 29,
+   "NOVO-TTF-100A": 6,
+   "NOVOTFF-100A": 3,
+   "NOVOTTF - 100A": 2,
+   "NOVOTFF": 1,
+   "LOPTUNE": 1
+  },
+  "date_added_before_extraction": null,
+  "regex_primary": {
+   "DISEASE_PROG": 15,
+   "SYSTEMIC": 13,
+   "NEURO": 8,
+   "HARDWARE": 4,
+   "INFECTION": 1,
+   "UNCLASSIFIABLE": 1
+  },
+  "narrative_death_rule": 21,
+  "narrative_death_llm": 21,
+  "death_attribution_rule": {
+   "other_cause_stated": 19,
+   "device_contribution_not_excluded": 2
+  },
+  "qwen2.5_7b_primary": {
+   "DISEASE_PROG": 25,
+   "NEURO": 7,
+   "SYSTEMIC": 6,
+   "SKIN_NONINF": 3,
+   "INFECTION": 1
+  },
+  "llama3.1_8b_primary": {
+   "DISEASE_PROG": 21,
+   "NEURO": 9,
+   "SYSTEMIC": 8,
+   "SKIN_NONINF": 4
+  }
+ },
+ "bulk": {
+  "device_rows_matched": 665,
+  "distinct_mdr_report_keys": 590,
+  "files": [
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "target_keys_found_in_bulk": 590,
+  "target_keys": 590,
+  "n_bulk_keys_not_in_target": 0,
+  "n_bulk_keys_not_in_openfda_audit": 0
+ },
+ "report_unit": {
+  "summary_report_flag_N": 548,
+  "noe_summarized_1": 548,
+  "single_device": 548,
+  "single_patient_entry": 548,
+  "N": 548,
+  "followup": {
+   "n": 137,
+   "N": 548,
+   "pct": 25.0,
+   "ci95": [
+    21.6,
+    28.8
+   ]
+  }
+ },
+ "duplicates": {
+  "max_cosine": 0.691,
+  "pairs_cosine_ge_0.5": [
+   [
+    13,
+    14,
+    0.623
+   ],
+   [
+    15,
+    24,
+    0.515
+   ],
+   [
+    210,
+    385,
+    0.551
+   ],
+   [
+    210,
+    402,
+    0.579
+   ],
+   [
+    385,
+    402,
+    0.691
+   ]
+  ],
+  "n_pairs_ge_0.7": 0,
+  "groups_same_event_date_age_sex": [
+   [
+    350,
+    375
+   ]
+  ]
+ },
+ "N": 548,
+ "N_intracranial": 537,
+ "N_thoracic": 11,
+ "years": {
+  "2012": 3,
+  "2014": 1,
+  "2015": 22,
+  "2016": 9,
+  "2017": 12,
+  "2018": 23,
+  "2019": 21,
+  "2020": 30,
+  "2021": 32,
+  "2022": 27,
+  "2023": 29,
+  "2024": 159,
+  "2025": 180
+ },
+ "recent": {
+  "n": 339,
+  "N": 548,
+  "pct": 61.9,
+  "ci95": [
+   57.7,
+   65.8
+  ]
+ },
+ "primary_ic": {
+  "SKIN_NONINF": {
+   "n": 144,
+   "N": 537,
+   "pct": 26.8,
+   "ci95": [
+    23.2,
+    30.7
+   ]
+  },
+  "INFECTION": {
+   "n": 182,
+   "N": 537,
+   "pct": 33.9,
+   "ci95": [
+    30.0,
+    38.0
+   ]
+  },
+  "FALL_ENTANGLE": {
+   "n": 73,
+   "N": 537,
+   "pct": 13.6,
+   "ci95": [
+    11.0,
+    16.8
+   ]
+  },
+  "NEURO": {
+   "n": 63,
+   "N": 537,
+   "pct": 11.7,
+   "ci95": [
+    9.3,
+    14.7
+   ]
+  },
+  "SYSTEMIC": {
+   "n": 13,
+   "N": 537,
+   "pct": 2.4,
+   "ci95": [
+    1.4,
+    4.1
+   ]
+  },
+  "DISEASE_PROG": {
+   "n": 23,
+   "N": 537,
+   "pct": 4.3,
+   "ci95": [
+    2.9,
+    6.3
+   ]
+  },
+  "USER_ERROR": {
+   "n": 4,
+   "N": 537,
+   "pct": 0.7,
+   "ci95": [
+    0.3,
+    1.9
+   ]
+  },
+  "OTHER": {
+   "n": 27,
+   "N": 537,
+   "pct": 5.0,
+   "ci95": [
+    3.5,
+    7.2
+   ]
+  },
+  "UNCLASSIFIABLE": {
+   "n": 8,
+   "N": 537,
+   "pct": 1.5,
+   "ci95": [
+    0.8,
+    2.9
+   ]
+  },
+  "HARDWARE": {
+   "n": 0,
+   "N": 537,
+   "pct": 0.0,
+   "ci95": [
+    0.0,
+    0.7
+   ]
+  }
+ },
+ "wound_ic": {
+  "n": 326,
+  "N": 537,
+  "pct": 60.7,
+  "ci95": [
+   56.5,
+   64.7
+  ]
+ },
+ "severity_ic": {
+  "MILD": {
+   "n": 7,
+   "N": 537,
+   "pct": 1.3,
+   "ci95": [
+    0.6,
+    2.7
+   ]
+  },
+  "MODERATE": {
+   "n": 189,
+   "N": 537,
+   "pct": 35.2,
+   "ci95": [
+    31.3,
+    39.3
+   ]
+  },
+  "SEVERE": {
+   "n": 318,
+   "N": 537,
+   "pct": 59.2,
+   "ci95": [
+    55.0,
+    63.3
+   ]
+  },
+  "FATAL": {
+   "n": 23,
+   "N": 537,
+   "pct": 4.3,
+   "ci95": [
+    2.9,
+    6.3
+   ]
+  }
+ },
+ "causality_ic": {
+  "DEFINITE": {
+   "n": 27,
+   "N": 537,
+   "pct": 5.0,
+   "ci95": [
+    3.5,
+    7.2
+   ]
+  },
+  "PROBABLE": {
+   "n": 150,
+   "N": 537,
+   "pct": 27.9,
+   "ci95": [
+    24.3,
+    31.9
+   ]
+  },
+  "POSSIBLE": {
+   "n": 144,
+   "N": 537,
+   "pct": 26.8,
+   "ci95": [
+    23.2,
+    30.7
+   ]
+  },
+  "UNLIKELY": {
+   "n": 77,
+   "N": 537,
+   "pct": 14.3,
+   "ci95": [
+    11.6,
+    17.6
+   ]
+  },
+  "UNASSESSABLE": {
+   "n": 139,
+   "N": 537,
+   "pct": 25.9,
+   "ci95": [
+    22.4,
+    29.8
+   ]
+  }
+ },
+ "source": {
+  "Manufacturer report": {
+   "n": 545,
+   "N": 548,
+   "pct": 99.5,
+   "ci95": [
+    98.4,
+    99.8
+   ]
+  },
+  "Voluntary report": {
+   "n": 3,
+   "N": 548,
+   "pct": 0.5,
+   "ci95": [
+    0.2,
+    1.6
+   ]
+  }
+ },
+ "event_type": {
+  "Injury": {
+   "n": 542,
+   "N": 548,
+   "pct": 98.9,
+   "ci95": [
+    97.6,
+    99.5
+   ]
+  },
+  "Death": {
+   "n": 5,
+   "N": 548,
+   "pct": 0.9,
+   "ci95": [
+    0.4,
+    2.1
+   ]
+  },
+  "Malfunction": {
+   "n": 1,
+   "N": 548,
+   "pct": 0.2,
+   "ci95": [
+    0.0,
+    1.0
+   ]
+  }
+ },
+ "indication": {
+  "Newly diagnosed GBM": {
+   "n": 429,
+   "N": 548,
+   "pct": 78.3,
+   "ci95": [
+    74.6,
+    81.5
+   ]
+  },
+  "Recurrent GBM": {
+   "n": 70,
+   "N": 548,
+   "pct": 12.8,
+   "ci95": [
+    10.2,
+    15.8
+   ]
+  },
+  "Glioma, phase not stated": {
+   "n": 28,
+   "N": 548,
+   "pct": 5.1,
+   "ci95": [
+    3.6,
+    7.3
+   ]
+  },
+  "Not stated": {
+   "n": 10,
+   "N": 548,
+   "pct": 1.8,
+   "ci95": [
+    1.0,
+    3.3
+   ]
+  },
+  "NSCLC": {
+   "n": 7,
+   "N": 548,
+   "pct": 1.3,
+   "ci95": [
+    0.6,
+    2.6
+   ]
+  },
+  "Pleural mesothelioma": {
+   "n": 4,
+   "N": 548,
+   "pct": 0.7,
+   "ci95": [
+    0.3,
+    1.9
+   ]
+  }
+ },
+ "age": {
+  "n": 373,
+  "median": 61.0,
+  "q1": 53.0,
+  "q3": 69.0
+ },
+ "sex": {
+  "Male": {
+   "n": 282,
+   "N": 548,
+   "pct": 51.5,
+   "ci95": [
+    47.3,
+    55.6
+   ]
+  },
+  "Female": {
+   "n": 217,
+   "N": 548,
+   "pct": 39.6,
+   "ci95": [
+    35.6,
+    43.8
+   ]
+  },
+  "Not stated": {
+   "n": 49,
+   "N": 548,
+   "pct": 8.9,
+   "ci95": [
+    6.8,
+    11.6
+   ]
+  }
+ },
+ "thoracic_primary": {
+  "SKIN_NONINF": 6,
+  "INFECTION": 5
+ },
+ "endpoints_ic": {
+  "hospitalised": {
+   "rule": {
+    "n": 221,
+    "N": 537,
+    "pct": 41.2,
+    "ci95": [
+     37.1,
+     45.4
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 291,
+    "N": 537,
+    "pct": 54.2,
+    "ci95": [
+     50.0,
+     58.4
+    ]
+   },
+   "both": {
+    "n": 217,
+    "N": 537,
+    "pct": 40.4,
+    "ci95": [
+     36.3,
+     44.6
+    ]
+   },
+   "either": {
+    "n": 295,
+    "N": 537,
+    "pct": 54.9,
+    "ci95": [
+     50.7,
+     59.1
+    ]
+   }
+  },
+  "surgery": {
+   "rule": {
+    "n": 142,
+    "N": 537,
+    "pct": 26.4,
+    "ci95": [
+     22.9,
+     30.3
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 205,
+    "N": 537,
+    "pct": 38.2,
+    "ci95": [
+     34.2,
+     42.4
+    ]
+   },
+   "both": {
+    "n": 125,
+    "N": 537,
+    "pct": 23.3,
+    "ci95": [
+     19.9,
+     27.0
+    ]
+   },
+   "either": {
+    "n": 222,
+    "N": 537,
+    "pct": 41.3,
+    "ci95": [
+     37.3,
+     45.6
+    ]
+   }
+  },
+  "iv_antibiotics": {
+   "rule": {
+    "n": 48,
+    "N": 537,
+    "pct": 8.9,
+    "ci95": [
+     6.8,
+     11.7
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 103,
+    "N": 537,
+    "pct": 19.2,
+    "ci95": [
+     16.1,
+     22.7
+    ]
+   },
+   "both": {
+    "n": 46,
+    "N": 537,
+    "pct": 8.6,
+    "ci95": [
+     6.5,
+     11.2
+    ]
+   },
+   "either": {
+    "n": 105,
+    "N": 537,
+    "pct": 19.6,
+    "ci95": [
+     16.4,
+     23.1
+    ]
+   }
+  },
+  "temporary_interruption": {
+   "rule": {
+    "n": 325,
+    "N": 537,
+    "pct": 60.5,
+    "ci95": [
+     56.3,
+     64.6
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 299,
+    "N": 537,
+    "pct": 55.7,
+    "ci95": [
+     51.5,
+     59.8
+    ]
+   },
+   "both": {
+    "n": 275,
+    "N": 537,
+    "pct": 51.2,
+    "ci95": [
+     47.0,
+     55.4
+    ]
+   },
+   "either": {
+    "n": 349,
+    "N": 537,
+    "pct": 65.0,
+    "ci95": [
+     60.9,
+     68.9
+    ]
+   }
+  },
+  "permanent_discontinuation": {
+   "rule": {
+    "n": 18,
+    "N": 537,
+    "pct": 3.4,
+    "ci95": [
+     2.1,
+     5.2
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 90,
+    "N": 537,
+    "pct": 16.8,
+    "ci95": [
+     13.8,
+     20.2
+    ]
+   },
+   "both": {
+    "n": 18,
+    "N": 537,
+    "pct": 3.4,
+    "ci95": [
+     2.1,
+     5.2
+    ]
+   },
+   "either": {
+    "n": 90,
+    "N": 537,
+    "pct": 16.8,
+    "ci95": [
+     13.8,
+     20.2
+    ]
+   }
+  },
+  "death": {
+   "rule": {
+    "n": 23,
+    "N": 537,
+    "pct": 4.3,
+    "ci95": [
+     2.9,
+     6.3
+    ]
+   },
+   "N_llm": 537,
+   "llm": {
+    "n": 23,
+    "N": 537,
+    "pct": 4.3,
+    "ci95": [
+     2.9,
+     6.3
+    ]
+   },
+   "both": {
+    "n": 22,
+    "N": 537,
+    "pct": 4.1,
+    "ci95": [
+     2.7,
+     6.1
+    ]
+   },
+   "either": {
+    "n": 24,
+    "N": 537,
+    "pct": 4.5,
+    "ci95": [
+     3.0,
+     6.6
+    ]
+   }
+  },
+  "none_documented": {
+   "rule": {
+    "n": 109,
+    "N": 537,
+    "pct": 20.3,
+    "ci95": [
+     17.1,
+     23.9
+    ]
+   }
+  }
+ },
+ "severity_components": {
+  "false": {
+   "FATAL": 6,
+   "MILD": 7,
+   "MODERATE": 184,
+   "SEVERE": 119
+  },
+  "true": {
+   "FATAL": 17,
+   "MILD": 0,
+   "MODERATE": 5,
+   "SEVERE": 199
+  }
+ },
+ "wound": {
+  "N": 326,
+  "surgical_site": {
+   "rule": {
+    "n": 175,
+    "N": 326,
+    "pct": 53.7,
+    "ci95": [
+     48.3,
+     59.0
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 126,
+    "N": 326,
+    "pct": 38.7,
+    "ci95": [
+     33.5,
+     44.0
+    ]
+   },
+   "both": {
+    "n": 119,
+    "N": 326,
+    "pct": 36.5,
+    "ci95": [
+     31.5,
+     41.9
+    ]
+   },
+   "either": {
+    "n": 182,
+    "N": 326,
+    "pct": 55.8,
+    "ci95": [
+     50.4,
+     61.1
+    ]
+   }
+  },
+  "dehiscence": {
+   "rule": {
+    "n": 78,
+    "N": 326,
+    "pct": 23.9,
+    "ci95": [
+     19.6,
+     28.8
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 82,
+    "N": 326,
+    "pct": 25.2,
+    "ci95": [
+     20.8,
+     30.1
+    ]
+   },
+   "both": {
+    "n": 67,
+    "N": 326,
+    "pct": 20.6,
+    "ci95": [
+     16.5,
+     25.3
+    ]
+   },
+   "either": {
+    "n": 93,
+    "N": 326,
+    "pct": 28.5,
+    "ci95": [
+     23.9,
+     33.7
+    ]
+   }
+  },
+  "exposure": {
+   "rule": {
+    "n": 52,
+    "N": 326,
+    "pct": 16.0,
+    "ci95": [
+     12.4,
+     20.3
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 62,
+    "N": 326,
+    "pct": 19.0,
+    "ci95": [
+     15.1,
+     23.6
+    ]
+   },
+   "both": {
+    "n": 48,
+    "N": 326,
+    "pct": 14.7,
+    "ci95": [
+     11.3,
+     19.0
+    ]
+   },
+   "either": {
+    "n": 66,
+    "N": 326,
+    "pct": 20.2,
+    "ci95": [
+     16.2,
+     24.9
+    ]
+   }
+  },
+  "infection_any": {
+   "rule": {
+    "n": 191,
+    "N": 326,
+    "pct": 58.6,
+    "ci95": [
+     53.2,
+     63.8
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 164,
+    "N": 326,
+    "pct": 50.3,
+    "ci95": [
+     44.9,
+     55.7
+    ]
+   },
+   "both": {
+    "n": 158,
+    "N": 326,
+    "pct": 48.5,
+    "ci95": [
+     43.1,
+     53.9
+    ]
+   },
+   "either": {
+    "n": 197,
+    "N": 326,
+    "pct": 60.4,
+    "ci95": [
+     55.0,
+     65.6
+    ]
+   }
+  },
+  "infection_confirmed": {
+   "rule": {
+    "n": 66,
+    "N": 326,
+    "pct": 20.2,
+    "ci95": [
+     16.2,
+     24.9
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 16,
+    "N": 326,
+    "pct": 4.9,
+    "ci95": [
+     3.0,
+     7.8
+    ]
+   },
+   "both": {
+    "n": 12,
+    "N": 326,
+    "pct": 3.7,
+    "ci95": [
+     2.1,
+     6.3
+    ]
+   },
+   "either": {
+    "n": 70,
+    "N": 326,
+    "pct": 21.5,
+    "ci95": [
+     17.4,
+     26.2
+    ]
+   }
+  },
+  "bone_infection": {
+   "rule": {
+    "n": 11,
+    "N": 326,
+    "pct": 3.4,
+    "ci95": [
+     1.9,
+     5.9
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 19,
+    "N": 326,
+    "pct": 5.8,
+    "ci95": [
+     3.8,
+     8.9
+    ]
+   },
+   "both": {
+    "n": 7,
+    "N": 326,
+    "pct": 2.1,
+    "ci95": [
+     1.0,
+     4.4
+    ]
+   },
+   "either": {
+    "n": 23,
+    "N": 326,
+    "pct": 7.1,
+    "ci95": [
+     4.7,
+     10.4
+    ]
+   }
+  },
+  "surgery": {
+   "rule": {
+    "n": 131,
+    "N": 326,
+    "pct": 40.2,
+    "ci95": [
+     35.0,
+     45.6
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 158,
+    "N": 326,
+    "pct": 48.5,
+    "ci95": [
+     43.1,
+     53.9
+    ]
+   },
+   "both": {
+    "n": 115,
+    "N": 326,
+    "pct": 35.3,
+    "ci95": [
+     30.3,
+     40.6
+    ]
+   },
+   "either": {
+    "n": 174,
+    "N": 326,
+    "pct": 53.4,
+    "ci95": [
+     48.0,
+     58.7
+    ]
+   }
+  },
+  "iv_antibiotics": {
+   "rule": {
+    "n": 43,
+    "N": 326,
+    "pct": 13.2,
+    "ci95": [
+     9.9,
+     17.3
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 92,
+    "N": 326,
+    "pct": 28.2,
+    "ci95": [
+     23.6,
+     33.3
+    ]
+   },
+   "both": {
+    "n": 41,
+    "N": 326,
+    "pct": 12.6,
+    "ci95": [
+     9.4,
+     16.6
+    ]
+   },
+   "either": {
+    "n": 94,
+    "N": 326,
+    "pct": 28.8,
+    "ci95": [
+     24.2,
+     34.0
+    ]
+   }
+  },
+  "hospitalised": {
+   "rule": {
+    "n": 121,
+    "N": 326,
+    "pct": 37.1,
+    "ci95": [
+     32.1,
+     42.5
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 150,
+    "N": 326,
+    "pct": 46.0,
+    "ci95": [
+     40.7,
+     51.4
+    ]
+   },
+   "both": {
+    "n": 120,
+    "N": 326,
+    "pct": 36.8,
+    "ci95": [
+     31.8,
+     42.2
+    ]
+   },
+   "either": {
+    "n": 151,
+    "N": 326,
+    "pct": 46.3,
+    "ci95": [
+     41.0,
+     51.7
+    ]
+   }
+  },
+  "temporary_interruption": {
+   "rule": {
+    "n": 224,
+    "N": 326,
+    "pct": 68.7,
+    "ci95": [
+     63.5,
+     73.5
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 192,
+    "N": 326,
+    "pct": 58.9,
+    "ci95": [
+     53.5,
+     64.1
+    ]
+   },
+   "both": {
+    "n": 185,
+    "N": 326,
+    "pct": 56.7,
+    "ci95": [
+     51.3,
+     62.0
+    ]
+   },
+   "either": {
+    "n": 231,
+    "N": 326,
+    "pct": 70.9,
+    "ci95": [
+     65.7,
+     75.5
+    ]
+   }
+  },
+  "permanent_discontinuation": {
+   "rule": {
+    "n": 14,
+    "N": 326,
+    "pct": 4.3,
+    "ci95": [
+     2.6,
+     7.1
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 66,
+    "N": 326,
+    "pct": 20.2,
+    "ci95": [
+     16.2,
+     24.9
+    ]
+   },
+   "both": {
+    "n": 14,
+    "N": 326,
+    "pct": 4.3,
+    "ci95": [
+     2.6,
+     7.1
+    ]
+   },
+   "either": {
+    "n": 66,
+    "N": 326,
+    "pct": 20.2,
+    "ci95": [
+     16.2,
+     24.9
+    ]
+   }
+  },
+  "proc_wound_revision_or_closure": {
+   "rule": {
+    "n": 62,
+    "N": 326,
+    "pct": 19.0,
+    "ci95": [
+     15.1,
+     23.6
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 130,
+    "N": 326,
+    "pct": 39.9,
+    "ci95": [
+     34.7,
+     45.3
+    ]
+   },
+   "both": {
+    "n": 56,
+    "N": 326,
+    "pct": 17.2,
+    "ci95": [
+     13.5,
+     21.6
+    ]
+   },
+   "either": {
+    "n": 136,
+    "N": 326,
+    "pct": 41.7,
+    "ci95": [
+     36.5,
+     47.1
+    ]
+   }
+  },
+  "proc_debridement_or_washout": {
+   "rule": {
+    "n": 39,
+    "N": 326,
+    "pct": 12.0,
+    "ci95": [
+     8.9,
+     15.9
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 11,
+    "N": 326,
+    "pct": 3.4,
+    "ci95": [
+     1.9,
+     5.9
+    ]
+   },
+   "both": {
+    "n": 9,
+    "N": 326,
+    "pct": 2.8,
+    "ci95": [
+     1.5,
+     5.2
+    ]
+   },
+   "either": {
+    "n": 41,
+    "N": 326,
+    "pct": 12.6,
+    "ci95": [
+     9.4,
+     16.6
+    ]
+   }
+  },
+  "proc_incision_and_drainage": {
+   "rule": {
+    "n": 5,
+    "N": 326,
+    "pct": 1.5,
+    "ci95": [
+     0.7,
+     3.5
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 4,
+    "N": 326,
+    "pct": 1.2,
+    "ci95": [
+     0.5,
+     3.1
+    ]
+   },
+   "both": {
+    "n": 1,
+    "N": 326,
+    "pct": 0.3,
+    "ci95": [
+     0.1,
+     1.7
+    ]
+   },
+   "either": {
+    "n": 8,
+    "N": 326,
+    "pct": 2.5,
+    "ci95": [
+     1.2,
+     4.8
+    ]
+   }
+  },
+  "proc_bone_flap_removal": {
+   "rule": {
+    "n": 37,
+    "N": 326,
+    "pct": 11.3,
+    "ci95": [
+     8.3,
+     15.3
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 12,
+    "N": 326,
+    "pct": 3.7,
+    "ci95": [
+     2.1,
+     6.3
+    ]
+   },
+   "both": {
+    "n": 12,
+    "N": 326,
+    "pct": 3.7,
+    "ci95": [
+     2.1,
+     6.3
+    ]
+   },
+   "either": {
+    "n": 37,
+    "N": 326,
+    "pct": 11.3,
+    "ci95": [
+     8.3,
+     15.3
+    ]
+   }
+  },
+  "proc_hardware_or_mesh_removal": {
+   "rule": {
+    "n": 31,
+    "N": 326,
+    "pct": 9.5,
+    "ci95": [
+     6.8,
+     13.2
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 15,
+    "N": 326,
+    "pct": 4.6,
+    "ci95": [
+     2.8,
+     7.5
+    ]
+   },
+   "both": {
+    "n": 10,
+    "N": 326,
+    "pct": 3.1,
+    "ci95": [
+     1.7,
+     5.6
+    ]
+   },
+   "either": {
+    "n": 36,
+    "N": 326,
+    "pct": 11.0,
+    "ci95": [
+     8.1,
+     14.9
+    ]
+   }
+  },
+  "proc_shunt_revision_or_removal": {
+   "rule": {
+    "n": 6,
+    "N": 326,
+    "pct": 1.8,
+    "ci95": [
+     0.8,
+     4.0
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 3,
+    "N": 326,
+    "pct": 0.9,
+    "ci95": [
+     0.3,
+     2.7
+    ]
+   },
+   "both": {
+    "n": 2,
+    "N": 326,
+    "pct": 0.6,
+    "ci95": [
+     0.2,
+     2.2
+    ]
+   },
+   "either": {
+    "n": 7,
+    "N": 326,
+    "pct": 2.1,
+    "ci95": [
+     1.0,
+     4.4
+    ]
+   }
+  },
+  "proc_flap_or_graft_reconstruction": {
+   "rule": {
+    "n": 16,
+    "N": 326,
+    "pct": 4.9,
+    "ci95": [
+     3.0,
+     7.8
+    ]
+   },
+   "N_llm": 326,
+   "llm": {
+    "n": 1,
+    "N": 326,
+    "pct": 0.3,
+    "ci95": [
+     0.1,
+     1.7
+    ]
+   },
+   "both": {
+    "n": 1,
+    "N": 326,
+    "pct": 0.3,
+    "ci95": [
+     0.1,
+     1.7
+    ]
+   },
+   "either": {
+    "n": 16,
+    "N": 326,
+    "pct": 4.9,
+    "ci95": [
+     3.0,
+     7.8
+    ]
+   }
+  },
+  "SKIN_NONINF": {
+   "N": 144,
+   "surgical_site": {
+    "n": 60,
+    "N": 144,
+    "pct": 41.7,
+    "ci95": [
+     33.9,
+     49.8
+    ]
+   },
+   "dehiscence": {
+    "n": 32,
+    "N": 144,
+    "pct": 22.2,
+    "ci95": [
+     16.2,
+     29.7
+    ]
+   },
+   "exposure": {
+    "n": 26,
+    "N": 144,
+    "pct": 18.1,
+    "ci95": [
+     12.6,
+     25.1
+    ]
+   },
+   "infection_any": {
+    "n": 27,
+    "N": 144,
+    "pct": 18.8,
+    "ci95": [
+     13.2,
+     25.9
+    ]
+   },
+   "infection_confirmed": {
+    "n": 7,
+    "N": 144,
+    "pct": 4.9,
+    "ci95": [
+     2.4,
+     9.7
+    ]
+   },
+   "bone_infection": {
+    "n": 0,
+    "N": 144,
+    "pct": 0.0,
+    "ci95": [
+     0.0,
+     2.6
+    ]
+   },
+   "surgery": {
+    "n": 40,
+    "N": 144,
+    "pct": 27.8,
+    "ci95": [
+     21.1,
+     35.6
+    ]
+   },
+   "iv_antibiotics": {
+    "n": 1,
+    "N": 144,
+    "pct": 0.7,
+    "ci95": [
+     0.1,
+     3.8
+    ]
+   },
+   "hospitalised": {
+    "n": 28,
+    "N": 144,
+    "pct": 19.4,
+    "ci95": [
+     13.8,
+     26.7
+    ]
+   },
+   "temporary_interruption": {
+    "n": 94,
+    "N": 144,
+    "pct": 65.3,
+    "ci95": [
+     57.2,
+     72.6
+    ]
+   },
+   "permanent_discontinuation": {
+    "n": 5,
+    "N": 144,
+    "pct": 3.5,
+    "ci95": [
+     1.5,
+     7.9
+    ]
+   }
+  },
+  "INFECTION": {
+   "N": 182,
+   "surgical_site": {
+    "n": 115,
+    "N": 182,
+    "pct": 63.2,
+    "ci95": [
+     56.0,
+     69.9
+    ]
+   },
+   "dehiscence": {
+    "n": 46,
+    "N": 182,
+    "pct": 25.3,
+    "ci95": [
+     19.5,
+     32.1
+    ]
+   },
+   "exposure": {
+    "n": 26,
+    "N": 182,
+    "pct": 14.3,
+    "ci95": [
+     9.9,
+     20.1
+    ]
+   },
+   "infection_any": {
+    "n": 164,
+    "N": 182,
+    "pct": 90.1,
+    "ci95": [
+     84.9,
+     93.7
+    ]
+   },
+   "infection_confirmed": {
+    "n": 59,
+    "N": 182,
+    "pct": 32.4,
+    "ci95": [
+     26.0,
+     39.5
+    ]
+   },
+   "bone_infection": {
+    "n": 11,
+    "N": 182,
+    "pct": 6.0,
+    "ci95": [
+     3.4,
+     10.5
+    ]
+   },
+   "surgery": {
+    "n": 91,
+    "N": 182,
+    "pct": 50.0,
+    "ci95": [
+     42.8,
+     57.2
+    ]
+   },
+   "iv_antibiotics": {
+    "n": 42,
+    "N": 182,
+    "pct": 23.1,
+    "ci95": [
+     17.6,
+     29.7
+    ]
+   },
+   "hospitalised": {
+    "n": 93,
+    "N": 182,
+    "pct": 51.1,
+    "ci95": [
+     43.9,
+     58.3
+    ]
+   },
+   "temporary_interruption": {
+    "n": 130,
+    "N": 182,
+    "pct": 71.4,
+    "ci95": [
+     64.5,
+     77.5
+    ]
+   },
+   "permanent_discontinuation": {
+    "n": 9,
+    "N": 182,
+    "pct": 4.9,
+    "ci95": [
+     2.6,
+     9.1
+    ]
+   }
+  },
+  "llm_no_skin_event": 97,
+  "site_rule_only": {
+   "n": 56,
+   "llm_no_skin_event": 27
+  },
+  "site_and_surgery": {
+   "n": 111,
+   "N": 326,
+   "pct": 34.0,
+   "ci95": [
+    29.1,
+    39.4
+   ]
+  },
+  "exposure_and_surgery": {
+   "n": 32,
+   "N": 326,
+   "pct": 9.8,
+   "ci95": [
+    7.0,
+    13.5
+   ]
+  },
+  "exposure_with_site": {
+   "n": 44,
+   "N": 52,
+   "pct": 84.6,
+   "ci95": [
+    72.5,
+    92.0
+   ]
+  },
+  "surgery_with_site": {
+   "n": 111,
+   "N": 131,
+   "pct": 84.7,
+   "ci95": [
+    77.6,
+    89.9
+   ]
+  },
+  "surgery_with_infection": {
+   "n": 99,
+   "N": 131,
+   "pct": 75.6,
+   "ci95": [
+    67.6,
+    82.1
+   ]
+  },
+  "exposure_with_infection": {
+   "n": 29,
+   "N": 52,
+   "pct": 55.8,
+   "ci95": [
+    42.3,
+    68.4
+   ]
+  },
+  "exposure_without_infection": 23,
+  "surgery_types_per_surgery_report": {
+   "median": 1.0
+  },
+  "proc_unspecified_only": 18,
+  "shunt_mentioned": {
+   "n": 10,
+   "N": 326,
+   "pct": 3.1,
+   "ci95": [
+    1.7,
+    5.6
+   ]
+  },
+  "combinations": [
+   {
+    "site": false,
+    "exposure": false,
+    "infection": false,
+    "surgery": false,
+    "n": 75
+   },
+   {
+    "site": false,
+    "exposure": false,
+    "infection": false,
+    "surgery": true,
+    "n": 7
+   },
+   {
+    "site": false,
+    "exposure": false,
+    "infection": true,
+    "surgery": false,
+    "n": 50
+   },
+   {
+    "site": false,
+    "exposure": false,
+    "infection": true,
+    "surgery": true,
+    "n": 11
+   },
+   {
+    "site": false,
+    "exposure": true,
+    "infection": false,
+    "surgery": false,
+    "n": 4
+   },
+   {
+    "site": false,
+    "exposure": true,
+    "infection": true,
+    "surgery": false,
+    "n": 2
+   },
+   {
+    "site": false,
+    "exposure": true,
+    "infection": true,
+    "surgery": true,
+    "n": 2
+   },
+   {
+    "site": true,
+    "exposure": false,
+    "infection": false,
+    "surgery": false,
+    "n": 15
+   },
+   {
+    "site": true,
+    "exposure": false,
+    "infection": false,
+    "surgery": true,
+    "n": 15
+   },
+   {
+    "site": true,
+    "exposure": false,
+    "infection": true,
+    "surgery": false,
+    "n": 35
+   },
+   {
+    "site": true,
+    "exposure": false,
+    "infection": true,
+    "surgery": true,
+    "n": 66
+   },
+   {
+    "site": true,
+    "exposure": true,
+    "infection": false,
+    "surgery": false,
+    "n": 9
+   },
+   {
+    "site": true,
+    "exposure": true,
+    "infection": false,
+    "surgery": true,
+    "n": 10
+   },
+   {
+    "site": true,
+    "exposure": true,
+    "infection": true,
+    "surgery": false,
+    "n": 5
+   },
+   {
+    "site": true,
+    "exposure": true,
+    "infection": true,
+    "surgery": true,
+    "n": 20
+   }
+  ],
+  "bevacizumab_rule": {
+   "not_mentioned": {
+    "n": 246,
+    "N": 326,
+    "pct": 75.5,
+    "ci95": [
+     70.5,
+     79.8
+    ]
+   },
+   "current_or_recent": {
+    "n": 45,
+    "N": 326,
+    "pct": 13.8,
+    "ci95": [
+     10.5,
+     18.0
+    ]
+   },
+   "mention_only": {
+    "n": 22,
+    "N": 326,
+    "pct": 6.7,
+    "ci95": [
+     4.5,
+     10.0
+    ]
+   },
+   "not_receiving": {
+    "n": 8,
+    "N": 326,
+    "pct": 2.5,
+    "ci95": [
+     1.2,
+     4.8
+    ]
+   },
+   "previous_only": {
+    "n": 5,
+    "N": 326,
+    "pct": 1.5,
+    "ci95": [
+     0.7,
+     3.5
+    ]
+   }
+  },
+  "bevacizumab_llm": {
+   "not_mentioned": {
+    "n": 248,
+    "N": 326,
+    "pct": 76.1,
+    "ci95": [
+     71.2,
+     80.4
+    ]
+   },
+   "current_or_recent": {
+    "n": 53,
+    "N": 326,
+    "pct": 16.3,
+    "ci95": [
+     12.6,
+     20.7
+    ]
+   },
+   "previous_only": {
+    "n": 16,
+    "N": 326,
+    "pct": 4.9,
+    "ci95": [
+     3.0,
+     7.8
+    ]
+   },
+   "not_receiving": {
+    "n": 9,
+    "N": 326,
+    "pct": 2.8,
+    "ci95": [
+     1.5,
+     5.2
+    ]
+   }
+  },
+  "bevacizumab_current_both": {
+   "n": 40,
+   "N": 326,
+   "pct": 12.3,
+   "ci95": [
+    9.1,
+    16.3
+   ]
+  },
+  "bevacizumab_current_either": {
+   "n": 58,
+   "N": 326,
+   "pct": 17.8,
+   "ci95": [
+    14.0,
+    22.3
+   ]
+  },
+  "bevacizumab_v1_any_mention": {
+   "n": 80,
+   "N": 326,
+   "pct": 24.5,
+   "ci95": [
+    20.2,
+    29.5
+   ]
+  }
+ },
+ "falls": {
+  "N": 73,
+  "cable_trip_or_entangle": {
+   "rule": {
+    "n": 13,
+    "N": 73,
+    "pct": 17.8,
+    "ci95": [
+     10.7,
+     28.1
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 48,
+    "N": 73,
+    "pct": 65.8,
+    "ci95": [
+     54.3,
+     75.6
+    ]
+   },
+   "both": {
+    "n": 9,
+    "N": 73,
+    "pct": 12.3,
+    "ci95": [
+     6.6,
+     21.8
+    ]
+   },
+   "either": {
+    "n": 52,
+    "N": 73,
+    "pct": 71.2,
+    "ci95": [
+     60.0,
+     80.3
+    ]
+   }
+  },
+  "pulled_by_cable": {
+   "rule": {
+    "n": 3,
+    "N": 73,
+    "pct": 4.1,
+    "ci95": [
+     1.4,
+     11.4
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 6,
+    "N": 73,
+    "pct": 8.2,
+    "ci95": [
+     3.8,
+     16.8
+    ]
+   },
+   "both": {
+    "n": 2,
+    "N": 73,
+    "pct": 2.7,
+    "ci95": [
+     0.8,
+     9.5
+    ]
+   },
+   "either": {
+    "n": 7,
+    "N": 73,
+    "pct": 9.6,
+    "ci95": [
+     4.7,
+     18.5
+    ]
+   }
+  },
+  "carrying_device": {
+   "rule": {
+    "n": 10,
+    "N": 73,
+    "pct": 13.7,
+    "ci95": [
+     7.6,
+     23.4
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 19,
+    "N": 73,
+    "pct": 26.0,
+    "ci95": [
+     17.3,
+     37.1
+    ]
+   },
+   "both": {
+    "n": 6,
+    "N": 73,
+    "pct": 8.2,
+    "ci95": [
+     3.8,
+     16.8
+    ]
+   },
+   "either": {
+    "n": 23,
+    "N": 73,
+    "pct": 31.5,
+    "ci95": [
+     22.0,
+     42.9
+    ]
+   }
+  },
+  "any_device_mechanism": {
+   "rule": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 68,
+    "N": 73,
+    "pct": 93.2,
+    "ci95": [
+     84.9,
+     97.0
+    ]
+   },
+   "both": {
+    "n": 23,
+    "N": 73,
+    "pct": 31.5,
+    "ci95": [
+     22.0,
+     42.9
+    ]
+   },
+   "either": {
+    "n": 69,
+    "N": 73,
+    "pct": 94.5,
+    "ci95": [
+     86.7,
+     97.8
+    ]
+   }
+  },
+  "other_cause": {
+   "rule": {
+    "n": 15,
+    "N": 73,
+    "pct": 20.5,
+    "ci95": [
+     12.9,
+     31.2
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 6,
+    "N": 73,
+    "pct": 8.2,
+    "ci95": [
+     3.8,
+     16.8
+    ]
+   },
+   "both": {
+    "n": 1,
+    "N": 73,
+    "pct": 1.4,
+    "ci95": [
+     0.2,
+     7.4
+    ]
+   },
+   "either": {
+    "n": 20,
+    "N": 73,
+    "pct": 27.4,
+    "ci95": [
+     18.5,
+     38.6
+    ]
+   }
+  },
+  "head_wound": {
+   "rule": {
+    "n": 47,
+    "N": 73,
+    "pct": 64.4,
+    "ci95": [
+     52.9,
+     74.4
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 50,
+    "N": 73,
+    "pct": 68.5,
+    "ci95": [
+     57.1,
+     78.0
+    ]
+   },
+   "both": {
+    "n": 45,
+    "N": 73,
+    "pct": 61.6,
+    "ci95": [
+     50.2,
+     71.9
+    ]
+   },
+   "either": {
+    "n": 52,
+    "N": 73,
+    "pct": 71.2,
+    "ci95": [
+     60.0,
+     80.3
+    ]
+   }
+  },
+  "fracture": {
+   "rule": {
+    "n": 17,
+    "N": 73,
+    "pct": 23.3,
+    "ci95": [
+     15.1,
+     34.2
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 19,
+    "N": 73,
+    "pct": 26.0,
+    "ci95": [
+     17.3,
+     37.1
+    ]
+   },
+   "both": {
+    "n": 16,
+    "N": 73,
+    "pct": 21.9,
+    "ci95": [
+     14.0,
+     32.7
+    ]
+   },
+   "either": {
+    "n": 20,
+    "N": 73,
+    "pct": 27.4,
+    "ci95": [
+     18.5,
+     38.6
+    ]
+   }
+  },
+  "ich": {
+   "rule": {
+    "n": 3,
+    "N": 73,
+    "pct": 4.1,
+    "ci95": [
+     1.4,
+     11.4
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 3,
+    "N": 73,
+    "pct": 4.1,
+    "ci95": [
+     1.4,
+     11.4
+    ]
+   },
+   "both": {
+    "n": 1,
+    "N": 73,
+    "pct": 1.4,
+    "ci95": [
+     0.2,
+     7.4
+    ]
+   },
+   "either": {
+    "n": 5,
+    "N": 73,
+    "pct": 6.8,
+    "ci95": [
+     3.0,
+     15.1
+    ]
+   }
+  },
+  "array_stated": {
+   "rule": {
+    "n": 9,
+    "N": 73,
+    "pct": 12.3,
+    "ci95": [
+     6.6,
+     21.8
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 40,
+    "N": 73,
+    "pct": 54.8,
+    "ci95": [
+     43.4,
+     65.7
+    ]
+   },
+   "both": {
+    "n": 8,
+    "N": 73,
+    "pct": 11.0,
+    "ci95": [
+     5.7,
+     20.2
+    ]
+   },
+   "either": {
+    "n": 41,
+    "N": 73,
+    "pct": 56.2,
+    "ci95": [
+     44.8,
+     67.0
+    ]
+   }
+  },
+  "array_crbo": {
+   "rule": {
+    "n": 53,
+    "N": 73,
+    "pct": 72.6,
+    "ci95": [
+     61.4,
+     81.5
+    ]
+   },
+   "N_llm": 73,
+   "llm": {
+    "n": 9,
+    "N": 73,
+    "pct": 12.3,
+    "ci95": [
+     6.6,
+     21.8
+    ]
+   },
+   "both": {
+    "n": 9,
+    "N": 73,
+    "pct": 12.3,
+    "ci95": [
+     6.6,
+     21.8
+    ]
+   },
+   "either": {
+    "n": 53,
+    "N": 73,
+    "pct": 72.6,
+    "ci95": [
+     61.4,
+     81.5
+    ]
+   }
+  },
+  "unrelated_stated": {
+   "rule": {
+    "n": 43,
+    "N": 73,
+    "pct": 58.9,
+    "ci95": [
+     47.4,
+     69.5
+    ]
+   }
+  },
+  "mechanism_hierarchy_rule": {
+   "mechanism not stated": {
+    "n": 37,
+    "N": 73,
+    "pct": 50.7,
+    "ci95": [
+     39.5,
+     61.8
+    ]
+   },
+   "device mechanism described": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   },
+   "other cause stated": {
+    "n": 12,
+    "N": 73,
+    "pct": 16.4,
+    "ci95": [
+     9.7,
+     26.6
+    ]
+   }
+  },
+  "device_mech_and_head_wound": 7,
+  "unrelated_and_crbo": 38,
+  "causality_human": {
+   "DEFINITE": {
+    "n": 19,
+    "N": 73,
+    "pct": 26.0,
+    "ci95": [
+     17.3,
+     37.1
+    ]
+   },
+   "PROBABLE": {
+    "n": 6,
+    "N": 73,
+    "pct": 8.2,
+    "ci95": [
+     3.8,
+     16.8
+    ]
+   },
+   "POSSIBLE": {
+    "n": 3,
+    "N": 73,
+    "pct": 4.1,
+    "ci95": [
+     1.4,
+     11.4
+    ]
+   },
+   "UNLIKELY": {
+    "n": 21,
+    "N": 73,
+    "pct": 28.8,
+    "ci95": [
+     19.7,
+     40.0
+    ]
+   },
+   "UNASSESSABLE": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   }
+  },
+  "severity_human": {
+   "MILD": {
+    "n": 4,
+    "N": 73,
+    "pct": 5.5,
+    "ci95": [
+     2.2,
+     13.3
+    ]
+   },
+   "MODERATE": {
+    "n": 38,
+    "N": 73,
+    "pct": 52.1,
+    "ci95": [
+     40.8,
+     63.1
+    ]
+   },
+   "SEVERE": {
+    "n": 31,
+    "N": 73,
+    "pct": 42.5,
+    "ci95": [
+     31.8,
+     53.9
+    ]
+   },
+   "FATAL": {
+    "n": 0,
+    "N": 73,
+    "pct": 0.0,
+    "ci95": [
+     0.0,
+     5.0
+    ]
+   }
+  },
+  "hospitalised": {
+   "n": 21,
+   "N": 73,
+   "pct": 28.8,
+   "ci95": [
+    19.7,
+    40.0
+   ]
+  },
+  "llm_only_mechanism": {
+   "n": 45,
+   "with_unrelated_or_no_contribution_statement": 37
+  },
+  "llm_only_array_stated": {
+   "n": 32,
+   "with_not_ruled_out_statement": 21
+  }
+ },
+ "falls_secondary": 13,
+ "deaths": {
+  "narrative_rule": 23,
+  "human_fatal": 23,
+  "rule_vs_human_fatal_both": 23,
+  "event_type_death": 5,
+  "event_type_of_narrative_deaths": {
+   "Injury": 18,
+   "Death": 5
+  },
+  "attribution_rule": {
+   "other_cause_stated": 19,
+   "not_stated": 3,
+   "device_contribution_not_excluded": 1
+  },
+  "attribution_llm": {
+   "device_contribution_not_excluded": 13,
+   "other_cause_stated": 9,
+   "not_stated": 1
+  },
+  "human_causality": {
+   "UNLIKELY": 13,
+   "UNASSESSABLE": 8,
+   "POSSIBLE": 2
+  },
+  "human_primary": {
+   "DISEASE_PROG": 10,
+   "UNCLASSIFIABLE": 5,
+   "INFECTION": 4,
+   "SYSTEMIC": 3,
+   "NEURO": 1
+  },
+  "event_type_death_attribution_rule": {
+   "other_cause_stated": 5
+  },
+  "injury_coded_other_cause": 14,
+  "injury_coded_with_possible_contribution": 2,
+  "llm_not_excluded": {
+   "n": 13,
+   "rule_other_cause": 9,
+   "rule_device_not_excluded": 1
+  },
+  "llm_narrative": 23
+ },
+ "reporter_attribution_ic": {
+  "cannot_be_ruled_out": {
+   "n": 330,
+   "N": 537,
+   "pct": 61.5,
+   "ci95": [
+    57.3,
+    65.5
+   ]
+  },
+  "related": {
+   "n": 156,
+   "N": 537,
+   "pct": 29.1,
+   "ci95": [
+    25.4,
+    33.0
+   ]
+  },
+  "not_related": {
+   "n": 36,
+   "N": 537,
+   "pct": 6.7,
+   "ci95": [
+    4.9,
+    9.1
+   ]
+  },
+  "not_stated": {
+   "n": 15,
+   "N": 537,
+   "pct": 2.8,
+   "ci95": [
+    1.7,
+    4.6
+   ]
+  }
+ },
+ "reporter_attribution_llm_ic": {
+  "cannot_be_ruled_out": {
+   "n": 453,
+   "N": 537,
+   "pct": 84.4,
+   "ci95": [
+    81.0,
+    87.2
+   ]
+  },
+  "related": {
+   "n": 52,
+   "N": 537,
+   "pct": 9.7,
+   "ci95": [
+    7.5,
+    12.5
+   ]
+  },
+  "not_related": {
+   "n": 29,
+   "N": 537,
+   "pct": 5.4,
+   "ci95": [
+    3.8,
+    7.6
+   ]
+  },
+  "not_stated": {
+   "n": 2,
+   "N": 537,
+   "pct": 0.4,
+   "ci95": [
+    0.1,
+    1.3
+   ]
+  }
+ },
+ "device_mechanism_ic": {
+  "rule": {
+   "n": 118,
+   "N": 537,
+   "pct": 22.0,
+   "ci95": [
+    18.7,
+    25.7
+   ]
+  },
+  "N_llm": 537,
+  "llm": {
+   "n": 428,
+   "N": 537,
+   "pct": 79.7,
+   "ci95": [
+    76.1,
+    82.9
+   ]
+  },
+  "both": {
+   "n": 111,
+   "N": 537,
+   "pct": 20.7,
+   "ci95": [
+    17.5,
+    24.3
+   ]
+  },
+  "either": {
+   "n": 435,
+   "N": 537,
+   "pct": 81.0,
+   "ci95": [
+    77.5,
+    84.1
+   ]
+  }
+ },
+ "attribution_by_human_causality": {
+  "cannot_be_ruled_out": {
+   "DEFINITE": 10,
+   "POSSIBLE": 77,
+   "PROBABLE": 73,
+   "UNASSESSABLE": 119,
+   "UNLIKELY": 51
+  },
+  "not_related": {
+   "DEFINITE": 0,
+   "POSSIBLE": 26,
+   "PROBABLE": 1,
+   "UNASSESSABLE": 1,
+   "UNLIKELY": 8
+  },
+  "not_stated": {
+   "DEFINITE": 6,
+   "POSSIBLE": 2,
+   "PROBABLE": 4,
+   "UNASSESSABLE": 1,
+   "UNLIKELY": 2
+  },
+  "related": {
+   "DEFINITE": 11,
+   "POSSIBLE": 39,
+   "PROBABLE": 72,
+   "UNASSESSABLE": 18,
+   "UNLIKELY": 16
+  }
+ },
+ "neuro_causality_sensitivity": {
+  "N": 63,
+  "possible": 60,
+  "recoded_to_unassessable": 42
+ },
+ "causality_ic_sensitivity": {
+  "DEFINITE": {
+   "n": 27,
+   "N": 537,
+   "pct": 5.0,
+   "ci95": [
+    3.5,
+    7.2
+   ]
+  },
+  "PROBABLE": {
+   "n": 150,
+   "N": 537,
+   "pct": 27.9,
+   "ci95": [
+    24.3,
+    31.9
+   ]
+  },
+  "POSSIBLE": {
+   "n": 102,
+   "N": 537,
+   "pct": 19.0,
+   "ci95": [
+    15.9,
+    22.5
+   ]
+  },
+  "UNLIKELY": {
+   "n": 77,
+   "N": 537,
+   "pct": 14.3,
+   "ci95": [
+    11.6,
+    17.6
+   ]
+  },
+  "UNASSESSABLE": {
+   "n": 181,
+   "N": 537,
+   "pct": 33.7,
+   "ci95": [
+    29.8,
+    37.8
+   ]
+  }
+ },
+ "quarterly": {
+  "2012Q1": {
+   "n": 1,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.0,
+   "fall": 1.0
+  },
+  "2012Q2": {
+   "n": 2,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.0,
+   "fall": 0.0
+  },
+  "2014Q4": {
+   "n": 1,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.0,
+   "fall": 0.0
+  },
+  "2015Q1": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 0.8,
+   "age": 0.0,
+   "us": 0.6,
+   "wound": 0.4,
+   "fall": 0.0
+  },
+  "2015Q2": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 0.6,
+   "age": 0.0,
+   "us": 0.8,
+   "wound": 0.0,
+   "fall": 0.0
+  },
+  "2015Q3": {
+   "n": 1,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.0,
+   "fall": 0.0
+  },
+  "2015Q4": {
+   "n": 11,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.818,
+   "wound": 0.182,
+   "fall": 0.091
+  },
+  "2016Q2": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 0.8,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.8,
+   "fall": 0.0
+  },
+  "2016Q3": {
+   "n": 1,
+   "sevfat": 0.0,
+   "hosp": 0.0,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 1.0,
+   "fall": 0.0
+  },
+  "2016Q4": {
+   "n": 3,
+   "sevfat": 0.667,
+   "hosp": 0.667,
+   "age": 0.0,
+   "us": 0.333,
+   "wound": 0.667,
+   "fall": 0.333
+  },
+  "2017Q1": {
+   "n": 7,
+   "sevfat": 1.0,
+   "hosp": 0.571,
+   "age": 0.0,
+   "us": 0.571,
+   "wound": 0.571,
+   "fall": 0.0
+  },
+  "2017Q2": {
+   "n": 2,
+   "sevfat": 1.0,
+   "hosp": 0.5,
+   "age": 0.0,
+   "us": 0.5,
+   "wound": 1.0,
+   "fall": 0.0
+  },
+  "2017Q3": {
+   "n": 2,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.5,
+   "wound": 0.5,
+   "fall": 0.5
+  },
+  "2017Q4": {
+   "n": 1,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.0,
+   "wound": 0.0,
+   "fall": 0.0
+  },
+  "2018Q1": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.2,
+   "wound": 0.4,
+   "fall": 0.0
+  },
+  "2018Q2": {
+   "n": 8,
+   "sevfat": 1.0,
+   "hosp": 0.75,
+   "age": 0.0,
+   "us": 0.625,
+   "wound": 0.5,
+   "fall": 0.0
+  },
+  "2018Q3": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.6,
+   "wound": 0.6,
+   "fall": 0.2
+  },
+  "2018Q4": {
+   "n": 5,
+   "sevfat": 0.8,
+   "hosp": 0.6,
+   "age": 0.0,
+   "us": 0.6,
+   "wound": 0.4,
+   "fall": 0.2
+  },
+  "2019Q1": {
+   "n": 4,
+   "sevfat": 1.0,
+   "hosp": 0.75,
+   "age": 0.0,
+   "us": 0.5,
+   "wound": 1.0,
+   "fall": 0.0
+  },
+  "2019Q2": {
+   "n": 1,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.0,
+   "us": 0.0,
+   "wound": 1.0,
+   "fall": 0.0
+  },
+  "2019Q3": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 0.8,
+   "age": 0.2,
+   "us": 0.8,
+   "wound": 0.8,
+   "fall": 0.0
+  },
+  "2019Q4": {
+   "n": 11,
+   "sevfat": 0.909,
+   "hosp": 0.818,
+   "age": 0.0,
+   "us": 0.727,
+   "wound": 0.636,
+   "fall": 0.091
+  },
+  "2020Q1": {
+   "n": 6,
+   "sevfat": 0.833,
+   "hosp": 0.5,
+   "age": 0.0,
+   "us": 0.667,
+   "wound": 0.333,
+   "fall": 0.0
+  },
+  "2020Q2": {
+   "n": 11,
+   "sevfat": 1.0,
+   "hosp": 0.909,
+   "age": 0.182,
+   "us": 0.455,
+   "wound": 0.909,
+   "fall": 0.0
+  },
+  "2020Q3": {
+   "n": 9,
+   "sevfat": 1.0,
+   "hosp": 0.333,
+   "age": 0.0,
+   "us": 0.778,
+   "wound": 0.778,
+   "fall": 0.0
+  },
+  "2020Q4": {
+   "n": 4,
+   "sevfat": 0.75,
+   "hosp": 0.25,
+   "age": 0.0,
+   "us": 1.0,
+   "wound": 0.25,
+   "fall": 0.5
+  },
+  "2021Q1": {
+   "n": 6,
+   "sevfat": 0.833,
+   "hosp": 0.667,
+   "age": 0.0,
+   "us": 0.833,
+   "wound": 0.667,
+   "fall": 0.333
+  },
+  "2021Q2": {
+   "n": 8,
+   "sevfat": 0.625,
+   "hosp": 0.375,
+   "age": 0.0,
+   "us": 0.5,
+   "wound": 0.625,
+   "fall": 0.25
+  },
+  "2021Q3": {
+   "n": 10,
+   "sevfat": 0.9,
+   "hosp": 0.8,
+   "age": 0.0,
+   "us": 0.6,
+   "wound": 0.6,
+   "fall": 0.0
+  },
+  "2021Q4": {
+   "n": 8,
+   "sevfat": 0.875,
+   "hosp": 0.625,
+   "age": 0.0,
+   "us": 0.625,
+   "wound": 0.625,
+   "fall": 0.0
+  },
+  "2022Q1": {
+   "n": 12,
+   "sevfat": 0.917,
+   "hosp": 0.5,
+   "age": 0.0,
+   "us": 0.583,
+   "wound": 0.917,
+   "fall": 0.0
+  },
+  "2022Q2": {
+   "n": 5,
+   "sevfat": 1.0,
+   "hosp": 1.0,
+   "age": 0.4,
+   "us": 0.4,
+   "wound": 0.6,
+   "fall": 0.4
+  },
+  "2022Q3": {
+   "n": 6,
+   "sevfat": 1.0,
+   "hosp": 0.833,
+   "age": 0.833,
+   "us": 0.5,
+   "wound": 0.667,
+   "fall": 0.0
+  },
+  "2022Q4": {
+   "n": 4,
+   "sevfat": 1.0,
+   "hosp": 0.75,
+   "age": 1.0,
+   "us": 0.75,
+   "wound": 0.5,
+   "fall": 0.0
+  },
+  "2023Q1": {
+   "n": 11,
+   "sevfat": 0.909,
+   "hosp": 0.545,
+   "age": 0.909,
+   "us": 0.273,
+   "wound": 0.818,
+   "fall": 0.0
+  },
+  "2023Q2": {
+   "n": 7,
+   "sevfat": 1.0,
+   "hosp": 0.571,
+   "age": 1.0,
+   "us": 0.857,
+   "wound": 0.857,
+   "fall": 0.143
+  },
+  "2023Q3": {
+   "n": 7,
+   "sevfat": 1.0,
+   "hosp": 0.571,
+   "age": 1.0,
+   "us": 0.429,
+   "wound": 0.714,
+   "fall": 0.0
+  },
+  "2023Q4": {
+   "n": 4,
+   "sevfat": 0.75,
+   "hosp": 0.75,
+   "age": 1.0,
+   "us": 0.75,
+   "wound": 0.5,
+   "fall": 0.25
+  },
+  "2024Q1": {
+   "n": 14,
+   "sevfat": 0.714,
+   "hosp": 0.357,
+   "age": 0.929,
+   "us": 0.5,
+   "wound": 0.357,
+   "fall": 0.429
+  },
+  "2024Q2": {
+   "n": 28,
+   "sevfat": 0.643,
+   "hosp": 0.357,
+   "age": 1.0,
+   "us": 0.571,
+   "wound": 0.393,
+   "fall": 0.357
+  },
+  "2024Q3": {
+   "n": 54,
+   "sevfat": 0.611,
+   "hosp": 0.352,
+   "age": 0.944,
+   "us": 0.667,
+   "wound": 0.481,
+   "fall": 0.222
+  },
+  "2024Q4": {
+   "n": 63,
+   "sevfat": 0.413,
+   "hosp": 0.127,
+   "age": 1.0,
+   "us": 0.746,
+   "wound": 0.683,
+   "fall": 0.127
+  },
+  "2025Q1": {
+   "n": 62,
+   "sevfat": 0.387,
+   "hosp": 0.21,
+   "age": 0.968,
+   "us": 0.645,
+   "wound": 0.613,
+   "fall": 0.194
+  },
+  "2025Q2": {
+   "n": 66,
+   "sevfat": 0.303,
+   "hosp": 0.212,
+   "age": 0.985,
+   "us": 0.485,
+   "wound": 0.667,
+   "fall": 0.106
+  },
+  "2025Q3": {
+   "n": 52,
+   "sevfat": 0.365,
+   "hosp": 0.135,
+   "age": 0.981,
+   "us": 0.577,
+   "wound": 0.827,
+   "fall": 0.019
+  }
+ },
+ "changepoints": {
+  "sevfat": {
+   "date": "20240208",
+   "before": {
+    "n": 200,
+    "N": 215,
+    "pct": 93.0,
+    "ci95": [
+     88.8,
+     95.7
+    ]
+   },
+   "after": {
+    "n": 144,
+    "N": 333,
+    "pct": 43.2,
+    "ci95": [
+     38.0,
+     48.6
+    ]
+   },
+   "boot_ci": [
+    "20231024",
+    "20240912"
+   ]
+  },
+  "hospitalised_v2": {
+   "date": "20240119",
+   "before": {
+    "n": 148,
+    "N": 212,
+    "pct": 69.8,
+    "ci95": [
+     63.3,
+     75.6
+    ]
+   },
+   "after": {
+    "n": 74,
+    "N": 336,
+    "pct": 22.0,
+    "ci95": [
+     17.9,
+     26.8
+    ]
+   },
+   "boot_ci": [
+    "20221111",
+    "20240912"
+   ]
+  },
+  "age_stated": {
+   "date": "20220615",
+   "before": {
+    "n": 3,
+    "N": 168,
+    "pct": 1.8,
+    "ci95": [
+     0.6,
+     5.1
+    ]
+   },
+   "after": {
+    "n": 370,
+    "N": 380,
+    "pct": 97.4,
+    "ci95": [
+     95.2,
+     98.6
+    ]
+   },
+   "boot_ci": [
+    "20220615",
+    "20220907"
+   ]
+  },
+  "gio": {
+   "date": "20231220",
+   "before": {
+    "n": 0,
+    "N": 208,
+    "pct": 0.0,
+    "ci95": [
+     0.0,
+     1.8
+    ]
+   },
+   "after": {
+    "n": 330,
+    "N": 340,
+    "pct": 97.1,
+    "ci95": [
+     94.7,
+     98.4
+    ]
+   },
+   "boot_ci": [
+    "20231220",
+    "20240118"
+   ]
+  },
+  "hp_source": {
+   "date": "20230428",
+   "before": {
+    "n": 23,
+    "N": 193,
+    "pct": 11.9,
+    "ci95": [
+     8.1,
+     17.2
+    ]
+   },
+   "after": {
+    "n": 170,
+    "N": 355,
+    "pct": 47.9,
+    "ci95": [
+     42.7,
+     53.1
+    ]
+   },
+   "boot_ci": [
+    "20230324",
+    "20230703"
+   ]
+  },
+  "unrel_template": {
+   "date": "20190131",
+   "before": {
+    "n": 8,
+    "N": 71,
+    "pct": 11.3,
+    "ci95": [
+     5.8,
+     20.7
+    ]
+   },
+   "after": {
+    "n": 117,
+    "N": 477,
+    "pct": 24.5,
+    "ci95": [
+     20.9,
+     28.6
+    ]
+   },
+   "boot_ci": [
+    "20170103",
+    "20250623"
+   ]
+  }
+ },
+ "volume_changepoint": {
+  "month": "2024-04",
+  "mean_before": 1.5,
+  "mean_after": 18.1
+ },
+ "period": {
+  "n": [
+   209,
+   339
+  ],
+  "sevfat": {
+   "p1": {
+    "n": 194,
+    "N": 209,
+    "pct": 92.8,
+    "ci95": [
+     88.5,
+     95.6
+    ]
+   },
+   "p2": {
+    "n": 150,
+    "N": 339,
+    "pct": 44.2,
+    "ci95": [
+     39.1,
+     49.6
+    ]
+   },
+   "diff_pp": -48.6,
+   "ci95": [
+    -54.5,
+    -41.7
+   ]
+  },
+  "hosp": {
+   "p1": {
+    "n": 146,
+    "N": 209,
+    "pct": 69.9,
+    "ci95": [
+     63.3,
+     75.7
+    ]
+   },
+   "p2": {
+    "n": 76,
+    "N": 339,
+    "pct": 22.4,
+    "ci95": [
+     18.3,
+     27.2
+    ]
+   },
+   "diff_pp": -47.4,
+   "ci95": [
+    -54.6,
+    -39.4
+   ]
+  },
+  "age_stated": {
+   "p1": {
+    "n": 42,
+    "N": 209,
+    "pct": 20.1,
+    "ci95": [
+     15.2,
+     26.0
+    ]
+   },
+   "p2": {
+    "n": 331,
+    "N": 339,
+    "pct": 97.6,
+    "ci95": [
+     95.4,
+     98.8
+    ]
+   },
+   "diff_pp": 77.5,
+   "ci95": [
+    71.2,
+    82.6
+   ]
+  },
+  "gio": {
+   "p1": {
+    "n": 1,
+    "N": 209,
+    "pct": 0.5,
+    "ci95": [
+     0.1,
+     2.7
+    ]
+   },
+   "p2": {
+    "n": 329,
+    "N": 339,
+    "pct": 97.1,
+    "ci95": [
+     94.7,
+     98.4
+    ]
+   },
+   "diff_pp": 96.6,
+   "ci95": [
+    93.3,
+    98.0
+   ]
+  },
+  "us": {
+   "p1": {
+    "n": 130,
+    "N": 209,
+    "pct": 62.2,
+    "ci95": [
+     55.5,
+     68.5
+    ]
+   },
+   "p2": {
+    "n": 208,
+    "N": 339,
+    "pct": 61.4,
+    "ci95": [
+     56.1,
+     66.4
+    ]
+   },
+   "diff_pp": -0.8,
+   "ci95": [
+    -9.1,
+    7.6
+   ]
+  },
+  "hp_source": {
+   "p1": {
+    "n": 35,
+    "N": 209,
+    "pct": 16.7,
+    "ci95": [
+     12.3,
+     22.4
+    ]
+   },
+   "p2": {
+    "n": 158,
+    "N": 339,
+    "pct": 46.6,
+    "ci95": [
+     41.4,
+     51.9
+    ]
+   },
+   "diff_pp": 29.9,
+   "ci95": [
+    22.2,
+    36.8
+   ]
+  },
+  "unrel_template": {
+   "p1": {
+    "n": 39,
+    "N": 209,
+    "pct": 18.7,
+    "ci95": [
+     14.0,
+     24.5
+    ]
+   },
+   "p2": {
+    "n": 86,
+    "N": 339,
+    "pct": 25.4,
+    "ci95": [
+     21.0,
+     30.3
+    ]
+   },
+   "diff_pp": 6.7,
+   "ci95": [
+    -0.6,
+    13.5
+   ]
+  },
+  "manufacturer_gmbh": {
+   "p1": {
+    "n": 101,
+    "N": 209,
+    "pct": 48.3,
+    "ci95": [
+     41.6,
+     55.1
+    ]
+   },
+   "p2": {
+    "n": 324,
+    "N": 339,
+    "pct": 95.6,
+    "ci95": [
+     92.8,
+     97.3
+    ]
+   },
+   "diff_pp": 47.2,
+   "ci95": [
+    40.0,
+    54.2
+   ]
+  },
+  "text_length_median": [
+   1893,
+   1398
+  ],
+  "wound": {
+   "p1": {
+    "n": 127,
+    "N": 209,
+    "pct": 60.8,
+    "ci95": [
+     54.0,
+     67.1
+    ]
+   },
+   "p2": {
+    "n": 210,
+    "N": 339,
+    "pct": 61.9,
+    "ci95": [
+     56.7,
+     67.0
+    ]
+   },
+   "diff_pp": 1.2,
+   "ci95": [
+    -7.1,
+    9.6
+   ]
+  },
+  "fall": {
+   "p1": {
+    "n": 17,
+    "N": 209,
+    "pct": 8.1,
+    "ci95": [
+     5.1,
+     12.6
+    ]
+   },
+   "p2": {
+    "n": 56,
+    "N": 339,
+    "pct": 16.5,
+    "ci95": [
+     12.9,
+     20.8
+    ]
+   },
+   "diff_pp": 8.4,
+   "ci95": [
+    2.6,
+    13.6
+   ]
+  },
+  "neuro": {
+   "p1": {
+    "n": 41,
+    "N": 209,
+    "pct": 19.6,
+    "ci95": [
+     14.8,
+     25.5
+    ]
+   },
+   "p2": {
+    "n": 22,
+    "N": 339,
+    "pct": 6.5,
+    "ci95": [
+     4.3,
+     9.6
+    ]
+   },
+   "diff_pp": -13.1,
+   "ci95": [
+    -19.4,
+    -7.4
+   ]
+  },
+  "country": {
+   "false": {
+    "US": 130,
+    "GM": 25,
+    "FR": 1,
+    "JA": 12,
+    "AU": 1,
+    "SW": 4,
+    "IS": 7,
+    "SZ": 2
+   },
+   "true": {
+    "US": 208,
+    "GM": 49,
+    "FR": 29,
+    "JA": 17,
+    "AU": 8,
+    "SW": 6,
+    "IS": 5,
+    "SZ": 4
+   }
+  }
+ },
+ "period_wound": {
+  "n": [
+   126,
+   200
+  ],
+  "surgical_site": {
+   "p1": {
+    "n": 106,
+    "N": 126,
+    "pct": 84.1,
+    "ci95": [
+     76.8,
+     89.5
+    ]
+   },
+   "p2": {
+    "n": 69,
+    "N": 200,
+    "pct": 34.5,
+    "ci95": [
+     28.3,
+     41.3
+    ]
+   },
+   "diff_pp": -49.6,
+   "ci95": [
+    -57.9,
+    -39.6
+   ]
+  },
+  "dehiscence": {
+   "p1": {
+    "n": 50,
+    "N": 126,
+    "pct": 39.7,
+    "ci95": [
+     31.6,
+     48.4
+    ]
+   },
+   "p2": {
+    "n": 28,
+    "N": 200,
+    "pct": 14.0,
+    "ci95": [
+     9.9,
+     19.5
+    ]
+   },
+   "diff_pp": -25.7,
+   "ci95": [
+    -35.3,
+    -15.9
+   ]
+  },
+  "exposure": {
+   "p1": {
+    "n": 32,
+    "N": 126,
+    "pct": 25.4,
+    "ci95": [
+     18.6,
+     33.6
+    ]
+   },
+   "p2": {
+    "n": 20,
+    "N": 200,
+    "pct": 10.0,
+    "ci95": [
+     6.6,
+     14.9
+    ]
+   },
+   "diff_pp": -15.4,
+   "ci95": [
+    -24.3,
+    -7.0
+   ]
+  },
+  "infection_any": {
+   "p1": {
+    "n": 88,
+    "N": 126,
+    "pct": 69.8,
+    "ci95": [
+     61.3,
+     77.2
+    ]
+   },
+   "p2": {
+    "n": 103,
+    "N": 200,
+    "pct": 51.5,
+    "ci95": [
+     44.6,
+     58.3
+    ]
+   },
+   "diff_pp": -18.3,
+   "ci95": [
+    -28.4,
+    -7.4
+   ]
+  },
+  "infection_confirmed": {
+   "p1": {
+    "n": 39,
+    "N": 126,
+    "pct": 31.0,
+    "ci95": [
+     23.5,
+     39.5
+    ]
+   },
+   "p2": {
+    "n": 27,
+    "N": 200,
+    "pct": 13.5,
+    "ci95": [
+     9.4,
+     18.9
+    ]
+   },
+   "diff_pp": -17.5,
+   "ci95": [
+    -26.9,
+    -8.3
+   ]
+  },
+  "bone_infection": {
+   "p1": {
+    "n": 9,
+    "N": 126,
+    "pct": 7.1,
+    "ci95": [
+     3.8,
+     13.0
+    ]
+   },
+   "p2": {
+    "n": 2,
+    "N": 200,
+    "pct": 1.0,
+    "ci95": [
+     0.3,
+     3.6
+    ]
+   },
+   "diff_pp": -6.1,
+   "ci95": [
+    -12.1,
+    -1.9
+   ]
+  },
+  "surgery": {
+   "p1": {
+    "n": 91,
+    "N": 126,
+    "pct": 72.2,
+    "ci95": [
+     63.8,
+     79.3
+    ]
+   },
+   "p2": {
+    "n": 40,
+    "N": 200,
+    "pct": 20.0,
+    "ci95": [
+     15.0,
+     26.1
+    ]
+   },
+   "diff_pp": -52.2,
+   "ci95": [
+    -60.9,
+    -41.9
+   ]
+  },
+  "iv_antibiotics": {
+   "p1": {
+    "n": 32,
+    "N": 126,
+    "pct": 25.4,
+    "ci95": [
+     18.6,
+     33.6
+    ]
+   },
+   "p2": {
+    "n": 11,
+    "N": 200,
+    "pct": 5.5,
+    "ci95": [
+     3.1,
+     9.6
+    ]
+   },
+   "diff_pp": -19.9,
+   "ci95": [
+    -28.5,
+    -12.0
+   ]
+  },
+  "hospitalised": {
+   "p1": {
+    "n": 86,
+    "N": 126,
+    "pct": 68.3,
+    "ci95": [
+     59.7,
+     75.7
+    ]
+   },
+   "p2": {
+    "n": 35,
+    "N": 200,
+    "pct": 17.5,
+    "ci95": [
+     12.9,
+     23.4
+    ]
+   },
+   "diff_pp": -50.8,
+   "ci95": [
+    -59.6,
+    -40.4
+   ]
+  },
+  "temporary_interruption": {
+   "p1": {
+    "n": 88,
+    "N": 126,
+    "pct": 69.8,
+    "ci95": [
+     61.3,
+     77.2
+    ]
+   },
+   "p2": {
+    "n": 136,
+    "N": 200,
+    "pct": 68.0,
+    "ci95": [
+     61.2,
+     74.1
+    ]
+   },
+   "diff_pp": -1.8,
+   "ci95": [
+    -11.8,
+    8.6
+   ]
+  },
+  "permanent_discontinuation": {
+   "p1": {
+    "n": 9,
+    "N": 126,
+    "pct": 7.1,
+    "ci95": [
+     3.8,
+     13.0
+    ]
+   },
+   "p2": {
+    "n": 5,
+    "N": 200,
+    "pct": 2.5,
+    "ci95": [
+     1.1,
+     5.7
+    ]
+   },
+   "diff_pp": -4.6,
+   "ci95": [
+    -10.7,
+    -0.0
+   ]
+  },
+  "sevfat": {
+   "p1": {
+    "n": 120,
+    "N": 126,
+    "pct": 95.2,
+    "ci95": [
+     90.0,
+     97.8
+    ]
+   },
+   "p2": {
+    "n": 83,
+    "N": 200,
+    "pct": 41.5,
+    "ci95": [
+     34.9,
+     48.4
+    ]
+   },
+   "diff_pp": -53.7,
+   "ci95": [
+    -60.8,
+    -45.1
+   ]
+  }
+ },
+ "period_falls": {
+  "n": [
+   17,
+   56
+  ],
+  "device_mech": {
+   "p1": {
+    "n": 10,
+    "N": 17,
+    "pct": 58.8,
+    "ci95": [
+     36.0,
+     78.4
+    ]
+   },
+   "p2": {
+    "n": 14,
+    "N": 56,
+    "pct": 25.0,
+    "ci95": [
+     15.5,
+     37.7
+    ]
+   },
+   "diff_pp": -33.8,
+   "ci95": [
+    -55.6,
+    -7.7
+   ]
+  },
+  "head_wound": {
+   "p1": {
+    "n": 9,
+    "N": 17,
+    "pct": 52.9,
+    "ci95": [
+     31.0,
+     73.8
+    ]
+   },
+   "p2": {
+    "n": 38,
+    "N": 56,
+    "pct": 67.9,
+    "ci95": [
+     54.8,
+     78.6
+    ]
+   },
+   "diff_pp": 14.9,
+   "ci95": [
+    -9.7,
+    39.4
+   ]
+  },
+  "fracture": {
+   "p1": {
+    "n": 8,
+    "N": 17,
+    "pct": 47.1,
+    "ci95": [
+     26.2,
+     69.0
+    ]
+   },
+   "p2": {
+    "n": 9,
+    "N": 56,
+    "pct": 16.1,
+    "ci95": [
+     8.7,
+     27.8
+    ]
+   },
+   "diff_pp": -31.0,
+   "ci95": [
+    -54.2,
+    -7.0
+   ]
+  }
+ },
+ "prespecified_period": {
+  "n": [
+   47,
+   501
+  ],
+  "Wound or infection": {
+   "p1": {
+    "n": 18,
+    "N": 47,
+    "pct": 38.3,
+    "ci95": [
+     25.8,
+     52.6
+    ]
+   },
+   "p2": {
+    "n": 319,
+    "N": 501,
+    "pct": 63.7,
+    "ci95": [
+     59.4,
+     67.8
+    ]
+   },
+   "diff_pp": 25.4,
+   "ci95": [
+    10.5,
+    38.5
+   ]
+  },
+  "Fall": {
+   "p1": {
+    "n": 4,
+    "N": 47,
+    "pct": 8.5,
+    "ci95": [
+     3.4,
+     19.9
+    ]
+   },
+   "p2": {
+    "n": 69,
+    "N": 501,
+    "pct": 13.8,
+    "ci95": [
+     11.0,
+     17.1
+    ]
+   },
+   "diff_pp": 5.3,
+   "ci95": [
+    -6.5,
+    11.4
+   ]
+  },
+  "Neurological": {
+   "p1": {
+    "n": 14,
+    "N": 47,
+    "pct": 29.8,
+    "ci95": [
+     18.7,
+     44.0
+    ]
+   },
+   "p2": {
+    "n": 49,
+    "N": 501,
+    "pct": 9.8,
+    "ci95": [
+     7.5,
+     12.7
+    ]
+   },
+   "diff_pp": -20.0,
+   "ci95": [
+    -34.4,
+    -8.5
+   ]
+  },
+  "Other": {
+   "p1": {
+    "n": 11,
+    "N": 47,
+    "pct": 23.4,
+    "ci95": [
+     13.6,
+     37.2
+    ]
+   },
+   "p2": {
+    "n": 64,
+    "N": 501,
+    "pct": 12.8,
+    "ci95": [
+     10.1,
+     16.0
+    ]
+   },
+   "diff_pp": -10.6,
+   "ci95": [
+    -24.7,
+    -0.3
+   ]
+  }
+ },
+ "robustness": [
+  {
+   "estimate": "Surgical-site involvement (wound reports)",
+   "main": {
+    "n": 175,
+    "N": 326,
+    "pct": 53.7,
+    "ci95": [
+     48.3,
+     59.0
+    ]
+   },
+   "all_548": {
+    "n": 175,
+    "N": 337,
+    "pct": 51.9,
+    "ci95": [
+     46.6,
+     57.2
+    ]
+   },
+   "rule_v1": {
+    "n": 180,
+    "N": 326,
+    "pct": 55.2,
+    "ci95": [
+     49.8,
+     60.5
+    ]
+   },
+   "llm": {
+    "n": 126,
+    "N": 326,
+    "pct": 38.7,
+    "ci95": [
+     33.5,
+     44.0
+    ]
+   },
+   "both_methods": {
+    "n": 119,
+    "N": 326,
+    "pct": 36.5,
+    "ci95": [
+     31.5,
+     41.9
+    ]
+   },
+   "either_method": {
+    "n": 182,
+    "N": 326,
+    "pct": 55.8,
+    "ci95": [
+     50.4,
+     61.1
+    ]
+   },
+   "2012_2023": {
+    "n": 106,
+    "N": 126,
+    "pct": 84.1,
+    "ci95": [
+     76.8,
+     89.5
+    ]
+   },
+   "2024_2025": {
+    "n": 69,
+    "N": 200,
+    "pct": 34.5,
+    "ci95": [
+     28.3,
+     41.3
+    ]
+   },
+   "excl_candidate_duplicates": {
+    "n": 175,
+    "N": 325,
+    "pct": 53.8,
+    "ci95": [
+     48.4,
+     59.2
+    ]
+   }
+  },
+  {
+   "estimate": "Exposed bone or implant (wound reports)",
+   "main": {
+    "n": 52,
+    "N": 326,
+    "pct": 16.0,
+    "ci95": [
+     12.4,
+     20.3
+    ]
+   },
+   "all_548": {
+    "n": 52,
+    "N": 337,
+    "pct": 15.4,
+    "ci95": [
+     12.0,
+     19.7
+    ]
+   },
+   "rule_v1": {
+    "n": 50,
+    "N": 326,
+    "pct": 15.3,
+    "ci95": [
+     11.8,
+     19.7
+    ]
+   },
+   "llm": {
+    "n": 62,
+    "N": 326,
+    "pct": 19.0,
+    "ci95": [
+     15.1,
+     23.6
+    ]
+   },
+   "both_methods": {
+    "n": 48,
+    "N": 326,
+    "pct": 14.7,
+    "ci95": [
+     11.3,
+     19.0
+    ]
+   },
+   "either_method": {
+    "n": 66,
+    "N": 326,
+    "pct": 20.2,
+    "ci95": [
+     16.2,
+     24.9
+    ]
+   },
+   "2012_2023": {
+    "n": 32,
+    "N": 126,
+    "pct": 25.4,
+    "ci95": [
+     18.6,
+     33.6
+    ]
+   },
+   "2024_2025": {
+    "n": 20,
+    "N": 200,
+    "pct": 10.0,
+    "ci95": [
+     6.6,
+     14.9
+    ]
+   },
+   "excl_candidate_duplicates": {
+    "n": 52,
+    "N": 325,
+    "pct": 16.0,
+    "ci95": [
+     12.4,
+     20.4
+    ]
+   }
+  },
+  {
+   "estimate": "Operative procedure for the event (wound reports)",
+   "main": {
+    "n": 131,
+    "N": 326,
+    "pct": 40.2,
+    "ci95": [
+     35.0,
+     45.6
+    ]
+   },
+   "all_548": {
+    "n": 132,
+    "N": 337,
+    "pct": 39.2,
+    "ci95": [
+     34.1,
+     44.5
+    ]
+   },
+   "rule_v1": {
+    "n": 84,
+    "N": 326,
+    "pct": 25.8,
+    "ci95": [
+     21.3,
+     30.8
+    ]
+   },
+   "llm": {
+    "n": 158,
+    "N": 326,
+    "pct": 48.5,
+    "ci95": [
+     43.1,
+     53.9
+    ]
+   },
+   "both_methods": {
+    "n": 115,
+    "N": 326,
+    "pct": 35.3,
+    "ci95": [
+     30.3,
+     40.6
+    ]
+   },
+   "either_method": {
+    "n": 174,
+    "N": 326,
+    "pct": 53.4,
+    "ci95": [
+     48.0,
+     58.7
+    ]
+   },
+   "2012_2023": {
+    "n": 91,
+    "N": 126,
+    "pct": 72.2,
+    "ci95": [
+     63.8,
+     79.3
+    ]
+   },
+   "2024_2025": {
+    "n": 40,
+    "N": 200,
+    "pct": 20.0,
+    "ci95": [
+     15.0,
+     26.1
+    ]
+   },
+   "excl_candidate_duplicates": {
+    "n": 131,
+    "N": 325,
+    "pct": 40.3,
+    "ci95": [
+     35.1,
+     45.7
+    ]
+   }
+  },
+  {
+   "estimate": "Device mechanism of fall (fall reports)",
+   "main": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   },
+   "all_548": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   },
+   "rule_v1": {
+    "n": 20,
+    "N": 73,
+    "pct": 27.4,
+    "ci95": [
+     18.5,
+     38.6
+    ]
+   },
+   "llm": {
+    "n": 68,
+    "N": 73,
+    "pct": 93.2,
+    "ci95": [
+     84.9,
+     97.0
+    ]
+   },
+   "both_methods": {
+    "n": 23,
+    "N": 73,
+    "pct": 31.5,
+    "ci95": [
+     22.0,
+     42.9
+    ]
+   },
+   "either_method": {
+    "n": 69,
+    "N": 73,
+    "pct": 94.5,
+    "ci95": [
+     86.7,
+     97.8
+    ]
+   },
+   "2012_2023": {
+    "n": 10,
+    "N": 17,
+    "pct": 58.8,
+    "ci95": [
+     36.0,
+     78.4
+    ]
+   },
+   "2024_2025": {
+    "n": 14,
+    "N": 56,
+    "pct": 25.0,
+    "ci95": [
+     15.5,
+     37.7
+    ]
+   },
+   "excl_candidate_duplicates": {
+    "n": 24,
+    "N": 73,
+    "pct": 32.9,
+    "ci95": [
+     23.2,
+     44.3
+    ]
+   }
+  },
+  {
+   "estimate": "Severe or fatal (all reports)",
+   "main": {
+    "n": 341,
+    "N": 537,
+    "pct": 63.5,
+    "ci95": [
+     59.3,
+     67.5
+    ]
+   },
+   "all_548": {
+    "n": 344,
+    "N": 548,
+    "pct": 62.8,
+    "ci95": [
+     58.7,
+     66.7
+    ]
+   },
+   "rule_v1": {
+    "n": 341,
+    "N": 537,
+    "pct": 63.5,
+    "ci95": [
+     59.3,
+     67.5
+    ]
+   },
+   "llm": null,
+   "both_methods": null,
+   "either_method": null,
+   "2012_2023": {
+    "n": 194,
+    "N": 208,
+    "pct": 93.3,
+    "ci95": [
+     89.0,
+     95.9
+    ]
+   },
+   "2024_2025": {
+    "n": 147,
+    "N": 329,
+    "pct": 44.7,
+    "ci95": [
+     39.4,
+     50.1
+    ]
+   },
+   "excl_candidate_duplicates": {
+    "n": 341,
+    "N": 536,
+    "pct": 63.6,
+    "ci95": [
+     59.5,
+     67.6
+    ]
+   }
+  }
+ ]
+}

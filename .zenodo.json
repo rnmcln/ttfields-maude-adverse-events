@@ -1,8 +1,8 @@
 {
- "title": "Adverse event reports for Tumor Treating Fields devices in the FDA MAUDE database: code, codebook and annotations",
+ "title": "Wound, surgical-site and fall-related complications reported with Tumor Treating Fields in the FDA MAUDE database: code, definitions and annotations",
  "upload_type": "software",
  "license": "MIT",
- "description": "Code, classification codebook and annotations for an analysis of 548 adverse event reports for Tumor Treating Fields devices in the US FDA MAUDE database (2012 to 2025), including human, rule-based and large language model classifications of the report narratives. MAUDE narratives are not redistributed; they are retrieved from openFDA by the included scripts.",
+ "description": "Code, classification definitions, extraction rules and annotations for a narrative analysis of adverse event reports for Tumor Treating Fields devices in the US FDA MAUDE database (2012 to 2025): retrieval audit against independent openFDA search arms and the FDA bulk files, human classification with a second-rater sample, rule-based and language-model extraction of wound, surgical-site, fall and death attributes, and a secondary comparison of rule-based and language-model classification. MAUDE narratives are not redistributed; they are retrieved from openFDA by the included scripts.",
  "creators": [
   {
    "name": "Nickel, Sophie",
@@ -32,6 +32,7 @@
   "medical device safety",
   "adverse events",
   "glioblastoma",
+  "surgical wound complications",
   "text classification"
  ],
  "version": "1.0.0"

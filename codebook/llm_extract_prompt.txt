@@ -1,0 +1,51 @@
+You extract structured clinical facts from one FDA MAUDE adverse event report about a Tumor Treating Fields device (Optune, Optune Gio, Optune Lua, NovoTTF). The device delivers electric fields through transducer arrays attached to the shaved scalp (or the chest for Optune Lua); the arrays connect by cable to a portable field generator carried in a bag, or to a wall power supply.
+
+General instructions
+- Record only facts stated in the report about THIS patient. Ignore general statements in manufacturer commentary, such as incidence figures from clinical trials (EF-11, EF-14, PRiDe, STELLAR, LUNAR), lists of expected events, lists of possible risk factors, or text quoted from prescribing information.
+- Answer "yes" only if the report states the fact explicitly. If the report does not say, answer "no" or "not_stated" as the field allows. Do not infer.
+- Distinguish what happened BEFORE the reported event (for example the original tumour resection) from what happened BECAUSE OF the reported event (for example surgery to treat a wound infection that developed during device use).
+- Statements that something was not present, not done or ruled out count as "no".
+
+Fields
+
+1. skin_or_wound_event: "yes" if the patient had a skin lesion, skin breakdown, ulcer, erosion, wound, dehiscence or infection of the scalp or skin during the reported episode; otherwise "no".
+
+2. surgical_site_involved: "yes" if the skin lesion, wound or infection was at, on, along or involved a craniotomy incision, surgical scar, suture or staple line, bone flap or other prior operative site; "no" if a skin lesion was present but the report places it elsewhere or does not connect it to an operative site; "not_applicable" if there was no skin or wound event.
+
+3. wound_dehiscence: "yes" if the report states that a surgical incision opened, separated, broke down or dehisced; otherwise "no".
+
+4. exposed_implant_or_bone: "yes" if the report states that bone, skull, dura, a bone flap, plate, screw, mesh, shunt, catheter or other implanted hardware was exposed or visible through the skin; otherwise "no".
+
+5. infection_status: "confirmed" if infection is supported by a positive culture, a named organism, pus or abscess, or infection found at surgery; "suspected" if infection is diagnosed, suspected or treated (for example with antibiotics) without such confirmation; "none" if no infection is described or infection was ruled out.
+
+6. bone_flap_or_osteomyelitis: "yes" if the report states infection of the bone flap, skull or bone (osteomyelitis); otherwise "no".
+
+7. surgery_for_event: "yes" if an operation or procedure in an operating room or at the bedside (for example debridement, washout, wound revision, incision and drainage, removal of bone flap or hardware, flap or graft closure) was performed to treat the reported complication; "no" if no such procedure was performed for it. Tumour resection, biopsy and operations before the complication began do not count. Planned or considered procedures that were not reported as performed count as "no".
+
+8. surgery_types: list of the procedures performed to treat the reported complication, using only these labels: "wound_revision_or_closure", "debridement_or_washout", "incision_and_drainage", "bone_flap_removal", "hardware_or_mesh_removal", "shunt_revision_or_removal", "flap_or_graft_reconstruction", "other". Empty list if surgery_for_event is "no".
+
+9. iv_antibiotics: "yes" if intravenous antibiotics were given for the reported event; otherwise "no".
+
+10. hospitalised: "yes" if the patient was admitted to hospital during the reported episode; otherwise "no". An emergency department visit with discharge the same day is "no".
+
+11. ttfields_interruption: "permanent" if device therapy was stopped permanently or not resumed; "temporary" if it was interrupted and resumed or planned to resume; "none_stated" otherwise.
+
+12. fall: "yes" if the patient fell during the reported episode; otherwise "no".
+
+13. fall_mechanism: list of mechanisms that the report states for how the fall happened, using only these labels: "tripped_or_entangled_in_cable" (tripped over, caught or entangled in a cable or cord), "pulled_by_cable" (pulled by a cable, for example while connected to the wall power supply), "carrying_device" (weight, bag, strap or field generator contributed to loss of balance), "other_cause_stated" (the report states another cause, such as seizure, weakness, dizziness, syncope or slipping, without device involvement), "not_stated". Use "not_stated" alone if the report gives no mechanism. Empty list if fall is "no".
+
+14. fall_injuries: list of injuries from the fall, using only these labels: "scalp_or_head_wound", "fracture", "intracranial_haemorrhage", "other_injury", "none_stated". Empty list if fall is "no".
+
+15. array_role_in_fall_injury: for falls only. "stated_contribution" if the report states that the arrays or device caused or contributed to the injury (for example an array edge or connector caused the laceration); "cannot_be_ruled_out" if the report only says that a contribution of the arrays or device could not be ruled out; "not_mentioned" otherwise; "not_applicable" if fall is "no".
+
+16. death_reported: "yes" if the report states that the patient died; otherwise "no".
+
+17. death_attribution: for deaths only. "other_cause_stated" if the report attributes the death to the tumour, disease progression or another cause, or states that the death was not related to the device; "device_contribution_not_excluded" if the report states the device may have contributed or a contribution cannot be ruled out; "not_stated" if no attribution is given; "not_applicable" if death_reported is "no".
+
+18. reporter_attribution: the causal statement made in the report by the treating physician or the manufacturer about the main event. "related" if stated to be related to, caused by or associated with the device; "cannot_be_ruled_out" if a contribution is stated to be possible or not excludable; "not_related" if stated to be unrelated; "not_stated" if no statement is made. If several statements conflict, choose the one closest to "related".
+
+19. device_mechanism_described: "yes" if the report describes a concrete physical way in which the device took part in the main event (for example adhesive or array pressure on the skin, skin breakdown under an array, cable traction, heat, electrical malfunction); "no" if the device is only mentioned as being in use.
+
+20. bevacizumab: "current_or_recent" if the patient was receiving bevacizumab (Avastin) at the time of the event or within the preceding months; "previous_only" if bevacizumab was given only earlier and stopped; "not_receiving" if the report states the patient was not on bevacizumab; "not_mentioned" if bevacizumab appears only in general commentary or not at all.
+
+Return one JSON object with exactly these 20 keys and the permitted values. No other text.

@@ -1,0 +1,471 @@
+{
+ "n_llm_available_study": 548,
+ "wound": {
+  "n": 326,
+  "surgical_site": {
+   "n": 326,
+   "rule": 175,
+   "llm": 126,
+   "both": 119,
+   "rule_only": 56,
+   "llm_only": 7,
+   "neither": 144,
+   "either": 182,
+   "kappa": 0.62,
+   "pos_agreement": 0.791
+  },
+  "dehiscence": {
+   "n": 326,
+   "rule": 78,
+   "llm": 82,
+   "both": 67,
+   "rule_only": 11,
+   "llm_only": 15,
+   "neither": 233,
+   "either": 93,
+   "kappa": 0.785,
+   "pos_agreement": 0.838
+  },
+  "exposure": {
+   "n": 326,
+   "rule": 52,
+   "llm": 62,
+   "both": 48,
+   "rule_only": 4,
+   "llm_only": 14,
+   "neither": 260,
+   "either": 66,
+   "kappa": 0.809,
+   "pos_agreement": 0.842
+  },
+  "infection_any": {
+   "n": 326,
+   "rule": 191,
+   "llm": 164,
+   "both": 158,
+   "rule_only": 33,
+   "llm_only": 6,
+   "neither": 129,
+   "either": 197,
+   "kappa": 0.76,
+   "pos_agreement": 0.89
+  },
+  "infection_confirmed": {
+   "n": 326,
+   "rule": 66,
+   "llm": 16,
+   "both": 12,
+   "rule_only": 54,
+   "llm_only": 4,
+   "neither": 256,
+   "either": 70,
+   "kappa": 0.232,
+   "pos_agreement": 0.293
+  },
+  "infection_rule_vs_human": {
+   "n": 326,
+   "rule": 182,
+   "llm": 191,
+   "both": 164,
+   "rule_only": 18,
+   "llm_only": 27,
+   "neither": 117,
+   "either": 209,
+   "kappa": 0.718,
+   "pos_agreement": 0.879
+  },
+  "infection_llm_vs_human": {
+   "n": 326,
+   "rule": 182,
+   "llm": 164,
+   "both": 152,
+   "rule_only": 30,
+   "llm_only": 12,
+   "neither": 132,
+   "either": 194,
+   "kappa": 0.742,
+   "pos_agreement": 0.879
+  },
+  "bone_infection": {
+   "n": 326,
+   "rule": 11,
+   "llm": 19,
+   "both": 7,
+   "rule_only": 4,
+   "llm_only": 12,
+   "neither": 303,
+   "either": 23,
+   "kappa": 0.443,
+   "pos_agreement": 0.467
+  },
+  "surgery": {
+   "n": 326,
+   "rule": 131,
+   "llm": 158,
+   "both": 115,
+   "rule_only": 16,
+   "llm_only": 43,
+   "neither": 152,
+   "either": 174,
+   "kappa": 0.636,
+   "pos_agreement": 0.796
+  },
+  "proc_debridement_or_washout": {
+   "n": 326,
+   "rule": 39,
+   "llm": 11,
+   "both": 9,
+   "rule_only": 30,
+   "llm_only": 2,
+   "neither": 285,
+   "either": 41,
+   "kappa": 0.324,
+   "pos_agreement": 0.36
+  },
+  "proc_incision_and_drainage": {
+   "n": 326,
+   "rule": 5,
+   "llm": 4,
+   "both": 1,
+   "rule_only": 4,
+   "llm_only": 3,
+   "neither": 318,
+   "either": 8,
+   "kappa": 0.211,
+   "pos_agreement": 0.222
+  },
+  "proc_bone_flap_removal": {
+   "n": 326,
+   "rule": 37,
+   "llm": 12,
+   "both": 12,
+   "rule_only": 25,
+   "llm_only": 0,
+   "neither": 289,
+   "either": 37,
+   "kappa": 0.46,
+   "pos_agreement": 0.49
+  },
+  "proc_hardware_or_mesh_removal": {
+   "n": 326,
+   "rule": 31,
+   "llm": 15,
+   "both": 10,
+   "rule_only": 21,
+   "llm_only": 5,
+   "neither": 290,
+   "either": 36,
+   "kappa": 0.397,
+   "pos_agreement": 0.435
+  },
+  "proc_shunt_revision_or_removal": {
+   "n": 326,
+   "rule": 6,
+   "llm": 3,
+   "both": 2,
+   "rule_only": 4,
+   "llm_only": 1,
+   "neither": 319,
+   "either": 7,
+   "kappa": 0.438,
+   "pos_agreement": 0.444
+  },
+  "proc_flap_or_graft_reconstruction": {
+   "n": 326,
+   "rule": 16,
+   "llm": 1,
+   "both": 1,
+   "rule_only": 15,
+   "llm_only": 0,
+   "neither": 310,
+   "either": 16,
+   "kappa": 0.113,
+   "pos_agreement": 0.118
+  },
+  "proc_wound_revision_or_closure": {
+   "n": 326,
+   "rule": 62,
+   "llm": 130,
+   "both": 56,
+   "rule_only": 6,
+   "llm_only": 74,
+   "neither": 190,
+   "either": 136,
+   "kappa": 0.439,
+   "pos_agreement": 0.583
+  },
+  "iv_antibiotics": {
+   "n": 326,
+   "rule": 43,
+   "llm": 92,
+   "both": 41,
+   "rule_only": 2,
+   "llm_only": 51,
+   "neither": 232,
+   "either": 94,
+   "kappa": 0.521,
+   "pos_agreement": 0.607
+  },
+  "hospitalised": {
+   "n": 326,
+   "rule": 121,
+   "llm": 150,
+   "both": 120,
+   "rule_only": 1,
+   "llm_only": 30,
+   "neither": 175,
+   "either": 151,
+   "kappa": 0.806,
+   "pos_agreement": 0.886
+  },
+  "bevacizumab_crosstab": {
+   "current_or_recent": {
+    "current_or_recent": 40,
+    "mention_only": 13,
+    "not_mentioned": 0,
+    "not_receiving": 0,
+    "previous_only": 0
+   },
+   "not_mentioned": {
+    "current_or_recent": 1,
+    "mention_only": 1,
+    "not_mentioned": 246,
+    "not_receiving": 0,
+    "previous_only": 0
+   },
+   "not_receiving": {
+    "current_or_recent": 1,
+    "mention_only": 0,
+    "not_mentioned": 0,
+    "not_receiving": 8,
+    "previous_only": 0
+   },
+   "previous_only": {
+    "current_or_recent": 3,
+    "mention_only": 8,
+    "not_mentioned": 0,
+    "not_receiving": 0,
+    "previous_only": 5
+   }
+  },
+  "bevacizumab_current_both": 40,
+  "bevacizumab_current_either": 58
+ },
+ "falls": {
+  "n": 73,
+  "cable_trip_or_entangle": {
+   "n": 73,
+   "rule": 13,
+   "llm": 48,
+   "both": 9,
+   "rule_only": 4,
+   "llm_only": 39,
+   "neither": 21,
+   "either": 52,
+   "kappa": 0.021,
+   "pos_agreement": 0.295
+  },
+  "pulled_by_cable": {
+   "n": 73,
+   "rule": 3,
+   "llm": 6,
+   "both": 2,
+   "rule_only": 1,
+   "llm_only": 4,
+   "neither": 66,
+   "either": 7,
+   "kappa": 0.412,
+   "pos_agreement": 0.444
+  },
+  "carrying_device": {
+   "n": 73,
+   "rule": 10,
+   "llm": 19,
+   "both": 6,
+   "rule_only": 4,
+   "llm_only": 13,
+   "neither": 50,
+   "either": 23,
+   "kappa": 0.286,
+   "pos_agreement": 0.414
+  },
+  "any_device_mechanism": {
+   "n": 73,
+   "rule": 24,
+   "llm": 68,
+   "both": 23,
+   "rule_only": 1,
+   "llm_only": 45,
+   "neither": 4,
+   "either": 69,
+   "kappa": 0.027,
+   "pos_agreement": 0.5
+  },
+  "other_cause": {
+   "n": 73,
+   "rule": 15,
+   "llm": 6,
+   "both": 1,
+   "rule_only": 14,
+   "llm_only": 5,
+   "neither": 53,
+   "either": 20,
+   "kappa": -0.025,
+   "pos_agreement": 0.095
+  },
+  "head_wound": {
+   "n": 73,
+   "rule": 47,
+   "llm": 50,
+   "both": 45,
+   "rule_only": 2,
+   "llm_only": 5,
+   "neither": 21,
+   "either": 52,
+   "kappa": 0.785,
+   "pos_agreement": 0.928
+  },
+  "fracture": {
+   "n": 73,
+   "rule": 17,
+   "llm": 19,
+   "both": 16,
+   "rule_only": 1,
+   "llm_only": 3,
+   "neither": 53,
+   "either": 20,
+   "kappa": 0.853,
+   "pos_agreement": 0.889
+  },
+  "ich": {
+   "n": 73,
+   "rule": 3,
+   "llm": 3,
+   "both": 1,
+   "rule_only": 2,
+   "llm_only": 2,
+   "neither": 68,
+   "either": 5,
+   "kappa": 0.305,
+   "pos_agreement": 0.333
+  },
+  "array_stated": {
+   "n": 73,
+   "rule": 9,
+   "llm": 40,
+   "both": 8,
+   "rule_only": 1,
+   "llm_only": 32,
+   "neither": 32,
+   "either": 41,
+   "kappa": 0.157,
+   "pos_agreement": 0.327
+  },
+  "array_crbo": {
+   "n": 73,
+   "rule": 53,
+   "llm": 9,
+   "both": 9,
+   "rule_only": 44,
+   "llm_only": 0,
+   "neither": 20,
+   "either": 53,
+   "kappa": 0.101,
+   "pos_agreement": 0.29
+  }
+ },
+ "all": {
+  "death": {
+   "n": 548,
+   "rule": 23,
+   "llm": 23,
+   "both": 22,
+   "rule_only": 1,
+   "llm_only": 1,
+   "neither": 524,
+   "either": 24,
+   "kappa": 0.955,
+   "pos_agreement": 0.957
+  },
+  "death_vs_human_fatal_rule": {
+   "n": 548,
+   "rule": 23,
+   "llm": 23,
+   "both": 23,
+   "rule_only": 0,
+   "llm_only": 0,
+   "neither": 525,
+   "either": 23,
+   "kappa": 1.0,
+   "pos_agreement": 1.0
+  },
+  "death_vs_human_fatal_llm": {
+   "n": 548,
+   "rule": 23,
+   "llm": 23,
+   "both": 22,
+   "rule_only": 1,
+   "llm_only": 1,
+   "neither": 524,
+   "either": 24,
+   "kappa": 0.955,
+   "pos_agreement": 0.957
+  },
+  "device_mechanism": {
+   "n": 548,
+   "rule": 123,
+   "llm": 439,
+   "both": 116,
+   "rule_only": 7,
+   "llm_only": 323,
+   "neither": 102,
+   "either": 446,
+   "kappa": 0.096,
+   "pos_agreement": 0.413
+  },
+  "hospitalised": {
+   "n": 548,
+   "rule": 222,
+   "llm": 292,
+   "both": 218,
+   "rule_only": 4,
+   "llm_only": 74,
+   "neither": 252,
+   "either": 296,
+   "kappa": 0.719,
+   "pos_agreement": 0.848
+  },
+  "reporter_attribution_crosstab": {
+   "cannot_be_ruled_out": {
+    "cannot_be_ruled_out": 319,
+    "not_related": 20,
+    "not_stated": 7,
+    "related": 117
+   },
+   "not_related": {
+    "cannot_be_ruled_out": 7,
+    "not_related": 15,
+    "not_stated": 1,
+    "related": 6
+   },
+   "not_stated": {
+    "cannot_be_ruled_out": 1,
+    "not_related": 0,
+    "not_stated": 0,
+    "related": 1
+   },
+   "related": {
+    "cannot_be_ruled_out": 6,
+    "not_related": 0,
+    "not_stated": 7,
+    "related": 40
+   }
+  },
+  "reporter_attribution_kappa": 0.301
+ },
+ "llm": {
+  "n_records": 590,
+  "n_parse_fail": 0,
+  "median_seconds": 35.935
+ }
+}
